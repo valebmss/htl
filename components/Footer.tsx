@@ -43,7 +43,7 @@ export default function Footer() {
       {/* Bottom section */}
       <div className="bg-[#4d5e78] py-4 px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-200 text-xs relative">
         <div>
-          Copyright © {new Date().getFullYear()} Nombre de la empresa
+          Copyright © {new Date().getFullYear()} HTL
           <span className="ml-2">🇪🇸</span>
         </div>
 
