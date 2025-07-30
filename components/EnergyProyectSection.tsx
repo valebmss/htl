@@ -2,8 +2,20 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+type EnergyProjectProps = {
+  dict: {
+    EnergyProyectSection: {
 
-export default function EnergyProjectSection() {
+      title: string;
+      summary: string;
+      description: string;
+      button: string;
+
+    };
+  };
+};
+
+export default function EnergyProjectSection({ dict }: EnergyProjectProps) {
   return (
     <section className="bg-[#f1f4fa] py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
@@ -16,19 +28,20 @@ export default function EnergyProjectSection() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-[#3a4b66] mb-4">
-            Ejecución Integral de Proyectos de Energía
+            {dict.EnergyProyectSection.title}
+          
           </h2>
           <p className="text-[#3a4b66] text-lg mb-2">
-            Brindamos soporte experto en cada etapa del ciclo del proyecto.
+            {dict.EnergyProyectSection.summary}
           </p>
           <p className="text-[#3a4b66] text-base mb-6 leading-relaxed">
-            Contamos con la experiencia necesaria para acompañarte en todas las fases de tu proyecto energético: desde la concepción inicial, pasando por la etapa de oferta, planeación y ejecución, hasta el cierre exitoso. Nuestro enfoque garantiza eficiencia, calidad y cumplimiento en cada paso.
+            {dict.EnergyProyectSection.description}
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             className="bg-[#91ACD6] hover:bg-[#7d9ac5] text-white font-medium px-6 py-2 rounded transition"
           >
-            Descubrir más
+            {dict.EnergyProyectSection.button}
           </motion.button>
         </motion.div>
 

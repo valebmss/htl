@@ -8,8 +8,16 @@ const images = [
   '/img/hero2.jpg',
   '/img/hero3.jpg',
 ]; // Asegúrate de que estén en /public/img/
+type HeroProps = {
+  dict: {
+    hero: {
+      title: string;
+      subtitle?: string;
+    };
+  };
+};
 
-export default function HeroCarousel() {
+export default function Hero({ dict }: HeroProps) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -40,9 +48,10 @@ export default function HeroCarousel() {
 
       {/* Texto fijo encima del carrusel */}
       <div className="absolute inset-0 flex items-center justify-center z-30">
-        <h1 className="text-white text-3xl sm:text-5xl font-bold text-center px-4">
-          Somos su aliado estratégico en proyectos de energía
-        </h1>
+<h1 className="text-white text-3xl sm:text-5xl font-bold text-center px-4">
+  {dict.hero.title}
+</h1>
+
       </div>
     </section>
   );

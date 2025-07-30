@@ -21,7 +21,17 @@ const servicios = [
   },
 ];
 
-export default function ServiciosSection() {
+type ServiciosSectionProps = {
+  dict: {
+
+    title: string;
+    description: string;
+  };
+
+
+};
+
+export default function ServiciosSection({ dict }: ServiciosSectionProps) {
   return (
     <section className="bg-[#e7edf6] py-20 px-6 md:px-12">
       <motion.div

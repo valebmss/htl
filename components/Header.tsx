@@ -3,7 +3,20 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Header() {
+type HeaderProps = {
+  dict: {
+    searchPlaceholder: string;
+    nav: {
+      about: string;
+      services: string;
+      blog: string;
+      contact: string;
+    };
+  };
+};
+
+
+export default function Header( { dict }: HeaderProps) {
   return (
     <header className=" bg-white text-white shadow-lg">
       {/* Primera fila: logo centrado + buscador */}
@@ -31,17 +44,17 @@ export default function Header() {
       {/* Segunda fila: navegación + botón */}
       <div  style={{ backgroundColor: '#91ACD6' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col md:flex-row items-center justify-between">
-          <nav className="flex space-x-6 mb-2 md:mb-0">
-            <Link href="/about" className="hover:text-blue-200 transition">Sobre Nosotros</Link>
-            <Link href="/servicios" className="hover:text-blue-200 transition">Servicios</Link>
-            <Link href="/blog" className="hover:text-blue-200 transition">Blog</Link>
-          </nav>
-          <Link
-            href="/contacto"
-            className="bg-white px-4 py-2 rounded-md font-medium hover:bg-blue-100 transition" style={{ color: '#91ACD6' }}
-          >
-            Contáctanos
-          </Link>
+          <Link href="/about" className="hover:text-blue-200 transition">{dict.nav.about}</Link>
+<Link href="/servicios" className="hover:text-blue-200 transition">{dict.nav.services}</Link>
+<Link href="/blog" className="hover:text-blue-200 transition">{dict.nav.blog}</Link>
+
+<Link
+  href="/contacto"
+  className="bg-white px-4 py-2 rounded-md font-medium hover:bg-blue-100 transition"
+  style={{ color: '#91ACD6' }}
+>
+  {dict.nav.contact}
+</Link>
         </div>
       </div>
     </header>

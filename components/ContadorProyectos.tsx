@@ -8,9 +8,19 @@ const datos = [
   { valor: 28, label: 'Proyectos' },
   { valor: 28, label: 'Subestaciones' },
   { valor: 7, label: 'Centrales de generación' },
+
 ];
 
-export default function ContadorProyectos() {
+
+type ContadorProyectosProps = {
+  dict: {
+    title: string;
+    description: string;
+  };
+
+};
+
+export default function ContadorProyectos({ dict }: ContadorProyectosProps  ) {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,

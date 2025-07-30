@@ -3,7 +3,16 @@
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { FaLinkedin } from 'react-icons/fa';
 
-export default function Footer() {
+type FooterProps = {
+  dict: {
+    title: string;
+    description: string;
+  };
+};
+
+
+
+export default function Footer({dict}:FooterProps) {
   return (
     <footer className="bg-[#5e7292] text-white text-sm">
       {/* Top section */}
