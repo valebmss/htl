@@ -2,20 +2,18 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-type EnergyProjectProps = {
+type EnergyProyectProps = {
   dict: {
-    EnergyProyectSection: {
-
+    energyProyect: {
       title: string;
       summary: string;
       description: string;
       button: string;
-
     };
   };
 };
 
-export default function EnergyProjectSection({ dict }: EnergyProjectProps) {
+export default function EnergyProyectSection({ dict }: EnergyProyectProps) {
   return (
     <section className="bg-[#f1f4fa] py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
@@ -28,20 +26,19 @@ export default function EnergyProjectSection({ dict }: EnergyProjectProps) {
           viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-[#3a4b66] mb-4">
-            {dict.EnergyProyectSection.title}
-          
+            {dict.energyProyect.title}
           </h2>
           <p className="text-[#3a4b66] text-lg mb-2">
-            {dict.EnergyProyectSection.summary}
+            {dict.energyProyect.summary}
           </p>
           <p className="text-[#3a4b66] text-base mb-6 leading-relaxed">
-            {dict.EnergyProyectSection.description}
+            {dict.energyProyect.description}
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             className="bg-[#91ACD6] hover:bg-[#7d9ac5] text-white font-medium px-6 py-2 rounded transition"
           >
-            {dict.EnergyProyectSection.button}
+            {dict.energyProyect.button}
           </motion.button>
         </motion.div>
 

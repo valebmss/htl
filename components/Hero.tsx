@@ -44,8 +44,6 @@ export default function Hero({ dict }: HeroProps) {
         />
       ))}
 
-      {/* Overlay si quieres oscurecer */}
-
       {/* Texto fijo encima del carrusel */}
       <div className="absolute inset-0 flex items-center justify-center z-30">
 <h1 className="text-white text-3xl sm:text-5xl font-bold text-center px-4">

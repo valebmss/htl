@@ -30,13 +30,13 @@ const posts: { title: string; slug: { current: string }; excerpt: string }[] = a
         <Hero dict={dict} />
       </main>
       <section>
-        <EnergyProyectSection dict={dict["energy-proyect-section"]} />
+        <EnergyProyectSection dict={dict} />
       </section>
       <section>
-        <ServiciosSection dict={dict["services-section"]} />
+        <ServiciosSection dict={dict} />
       </section>
       <section>
-        <ContadorProyectos dict={dict["contador-proyectos"]} />
+        <ContadorProyectos dict={dict} />
       </section>
     </div>
   );
