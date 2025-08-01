@@ -2,11 +2,18 @@
 
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { FaLinkedin } from 'react-icons/fa';
+import ReferencesSection from './ReferenceSection';
 
 type FooterProps = {
   dict: {
+
+    
+
+
     title: string;
     description: string;
+    referencesTitle: string;
+    referencesSubtitle: string;
   };
 };
 
@@ -14,6 +21,8 @@ type FooterProps = {
 
 export default function Footer({dict}:FooterProps) {
   return (
+  <div>
+    <ReferencesSection dict={dict} />
     <footer className="bg-[#5e7292] text-white text-sm">
       {/* Top section */}
       <div className="max-w-7xl mx-auto py-12 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-b border-white/10">
@@ -69,5 +78,7 @@ export default function Footer({dict}:FooterProps) {
         </a>
       </div>
     </footer>
+  </div>
+
   );
 }

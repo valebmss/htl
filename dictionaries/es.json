@@ -4,6 +4,9 @@
     "nav": {
       "about": "Sobre Nosotros",
       "services": "Servicios",
+      "proyectos": "Proyectos",
+      "historiasexito": "Historias de Éxito",
+      
       "blog": "Blog",
       "contact": "Contáctanos"
     }
@@ -16,5 +19,7 @@
     "summary": "Brindamos soporte experto en cada etapa del ciclo del proyecto.",
     "description": "Contamos con la experiencia necesaria para acompañarte en todas las fases de tu proyecto energético: desde la concepción inicial, pasando por la etapa de oferta, planeación y ejecución, hasta el cierre exitoso. Nuestro enfoque garantiza eficiencia, calidad y cumplimiento en cada paso.",
     "button": "Descubrir más"
-  }
+  },
+  "referencesTitle": "Nuestras referencias",
+  "referencesSubtitle": "Tenemos buena compañía. Ellos han confiado en nosotros:"
 }

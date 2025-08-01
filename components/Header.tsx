@@ -9,6 +9,8 @@ type HeaderProps = {
     nav: {
       about: string;
       services: string;
+      proyectos: string;
+      historiasexito: string;
       blog: string;
       contact: string;
     };
@@ -46,6 +48,8 @@ export default function Header( { dict }: HeaderProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col md:flex-row items-center justify-between">
           <Link href="/about" className="hover:text-blue-200 transition">{dict.nav.about}</Link>
 <Link href="/servicios" className="hover:text-blue-200 transition">{dict.nav.services}</Link>
+<Link href="/proyectos" className="hover:text-blue-200 transition">{dict.nav.proyectos}</Link>
+<Link href="/historiasexito" className="hover:text-blue-200 transition">{dict.nav.historiasexito}</Link>
 <Link href="/blog" className="hover:text-blue-200 transition">{dict.nav.blog}</Link>
 
 <Link
