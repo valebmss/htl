@@ -1,20 +1,18 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-const PUBLIC_FILE = /\.(.*)$/;
-const locales = ['en', 'es'];
-const defaultLocale = 'es';
+export function middleware(request: NextRequest) {
+  const pathname = request.nextUrl.pathname;
 
-export function middleware(req: NextRequest) {
-  const { pathname } = req.nextUrl;
-
-  if (
-    PUBLIC_FILE.test(pathname) ||
-    pathname.startsWith('/api') ||
-    locales.some((loc) => pathname.startsWith(`/${loc}`))
-  ) {
-    return NextResponse.next();
+  if (pathname === '/') {
+    const url = request.nextUrl.clone();
+    url.pathname = '/es';
+    return NextResponse.redirect(url);
   }
 
-  const locale = req.headers.get('accept-language')?.startsWith('en') ? 'en' : defaultLocale;
-  return NextResponse.redirect(new URL(`/${locale}${pathname}`, req.url));
+  return NextResponse.next();
 }
+
+export const config = {
+  matcher: ['/', '/((?!_next|api|favicon.ico).*)'],
+};

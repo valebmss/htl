@@ -3,10 +3,11 @@
     "searchPlaceholder": "Buscar...",
     "nav": {
       "about": "Sobre Nosotros",
+      "inicio": "Inicio",
       "services": "Servicios",
       "proyectos": "Proyectos",
       "historiasexito": "Historias de Éxito",
-      
+
       "blog": "Blog",
       "contact": "Contáctanos"
     }
