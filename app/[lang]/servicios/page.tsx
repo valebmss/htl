@@ -5,7 +5,7 @@ import Image from 'next/image';
 const servicios = [
   {
     title: 'Consultorías',
-    image: '/img/servicios/consultoria.jpg',
+    image: '/img/servicios/s1.jpg',
     items: [
       'Cálculo de protecciones eléctricas',
       'Cálculo de carga y cortocircuito',
@@ -17,7 +17,7 @@ const servicios = [
   },
   {
     title: 'Ingeniería secundaria',
-    image: '/img/servicios/ingenieria.jpg',
+    image: '/img/servicios/s2.jpg',
     items: [
       'Diagramas unifilares y lógicos',
       'Definición de tableros y señales',
