@@ -48,13 +48,12 @@ export default function ProyectosPage() {
       {/* Hero */}
       <section className="relative h-[80vh] w-full">
         <Image
-          src="/images/hero-proyectos.jpg"
+          src="/img/projects.jpg"
           alt="Oficina"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="absolute inset-0 flex items-center justify-start p-8 md:p-20">
           <div className="bg-white p-6 md:p-10 rounded-xl shadow-md max-w-2xl">
             <h1 className="text-3xl md:text-5xl font-semibold text-[#3a4b66] mb-4">

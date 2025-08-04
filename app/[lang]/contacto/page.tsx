@@ -54,7 +54,7 @@ interface PageProps {
   params: { lang: string };
 }
 
-export default async function ContactPage({ params }: PageProps) {
+export default async function ContactPage({ params }: { params: { lang: string } }) {
   const dict = await getDictionary(params.lang);
 
   return (
