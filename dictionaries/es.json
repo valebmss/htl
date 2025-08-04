@@ -12,6 +12,38 @@
       "contact": "Contáctanos"
     }
   },
+  "contacto-section": {
+    "title": "Contáctanos",
+    "subtitle": "Ponte en contacto con nosotros",
+    "description": "Estamos aquí para ayudarte con tus proyectos energéticos. Contáctanos para consultas, soporte o oportunidades de colaboración.",
+    "mission": "Nuestra misión es proporcionar soluciones energéticas de alta calidad, confiables e innovadoras.",
+    "vision": "Visualizamos un futuro sostenible impulsado por energía limpia y eficiente.",
+    "form": {
+      "name": "Nombre",
+
+      "phone": "Teléfono",
+
+      "email": "Correo Electrónico",
+      "company": "Empresa",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar"
+    },
+    "locations": [
+      {
+        "name": "HTL Consultoría y Servicios",
+        "address": "Km 2.5 Vía Cajicá, Ed Belenus Of. 513, Chía, Cundinamarca, Colombia",
+        "phone": "+573017911197",
+        "email": "atencionalcliente@htl-cs.com"
+      },
+      {
+        "name": "PRESEL SAC",
+        "address": "Jr Pallasca 1951, Los Olivos, Lima",
+        "phone": "+5117390828",
+        "email": "atencionalcliente@htl-cs.com"
+      }
+    ]
+  },
   "hero": {
     "title": "Somos su aliado estratégico en proyectos de energía"
   },
