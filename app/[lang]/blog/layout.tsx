@@ -1,4 +1,8 @@
 import '../../globals.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { getDictionary } from '@/utils/getDictionary';
+import { ReactNode } from 'react';
 
 export const metadata = {
   title: 'Next.js',
@@ -6,23 +10,34 @@ export const metadata = {
   
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
-  children: React.ReactNode
+  children: ReactNode;
+  params: Promise<{ lang: string }>;
 }) {
-  return (
+    const resolvedParams = await params;
+  const lang = Array.isArray(resolvedParams.lang)
+    ? resolvedParams.lang[0]
+    : resolvedParams.lang;
+
+  const safeLang = lang === "es" || lang === "en" ? lang : "es";
+
+  const dict = await getDictionary(safeLang);
+    return (
     <html lang="en">
       <body>
-
+        <Header dict={dict.header} />
                 <main>
                           {children}
 
 
                 </main>
-
-
+                <Footer dict={dict.footer} />
       </body>
     </html>
-  )
+    );
+  
+
 }
