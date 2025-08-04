@@ -15,9 +15,15 @@ const query = groq`
   *[_type == "post" && slug.current == $slug][0]{
     title,
     mainImage,
-    body
+    body,
+    author->{
+      name,
+      slug,
+      image
+    }
   }
 `;
+
 
 const components: PortableTextComponents = {
   block: {
@@ -74,6 +80,8 @@ export default async function PostPage(
   return (
     <article className="max-w-4xl mx-auto px-6 py-16">
       <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-black">{post.title}</h1>
+     
+
 
       {post.mainImage?.asset?._ref && (
         <div className="relative w-full h-[400px] md:h-[500px] mb-10 rounded-xl overflow-hidden shadow-xl">
@@ -94,6 +102,31 @@ export default async function PostPage(
       <div className="prose prose-lg max-w-none text-black prose-h2:text-secondary prose-a:text-primary prose-img:rounded-lg">
         <PortableText value={post.body} components={components} />
       </div>
+       {post.author && (
+  <div className="flex items-center justify-center gap-3 mb-10">
+    {post.author.image?.asset?._ref && (
+      <Image
+        src={`https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET}/${post.author.image.asset._ref
+          .replace('image-', '')
+          .replace('-jpg', '.jpg')
+          .replace('-png', '.png')}`}
+        alt={post.author.name}
+        width={40}
+        height={40}
+        className="rounded-full"
+      />
+    )}
+    <p className="text-gray-600">
+      Escrito por{' '}
+      <a
+        href={`/autores/${post.author.slug.current}`}
+        className="text-blue-700 hover:underline font-medium"
+      >
+        {post.author.name}
+      </a>
+    </p>
+  </div>
+)}
     </article>
   );
 }
