@@ -119,7 +119,7 @@ export default async function PostPage(
     <p className="text-gray-600">
       Escrito por{' '}
       <a
-        href={`/autores/${post.author.slug.current}`}
+        href={`es/autores/${post.author.slug.current}`}
         className="text-blue-700 hover:underline font-medium"
       >
         {post.author.name}
