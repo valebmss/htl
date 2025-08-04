@@ -94,6 +94,8 @@ export default function Header({ dict }: HeaderProps) {
           <Link href={`/${currentLang}/proyectos`} className="hover:text-blue-200 transition">{dict.nav.proyectos}</Link>
           <Link href={`/${currentLang}/historiasexito`} className="hover:text-blue-200 transition">{dict.nav.historiasexito}</Link>
           <Link href={`/${currentLang}/blog`} className="hover:text-blue-200 transition">{dict.nav.blog}</Link>
+          <Link href={`/${currentLang}/contacto`} className="hover:text-blue-200 transition">{dict.nav.contact}</Link>
+
           <Link
             href={`/${currentLang}/contacto`}
             className="bg-white px-4 py-2 rounded-md font-medium hover:bg-blue-100 transition"
