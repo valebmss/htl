@@ -15,10 +15,17 @@ type Props = {
 };
 
 export default async function RootLayout({ children, params }: Props) {
-  const dict = await getDictionary(params.lang);
+    const resolvedParams = await params;
+  const lang = Array.isArray(resolvedParams.lang)
+    ? resolvedParams.lang[0]
+    : resolvedParams.lang;
+
+  const safeLang = lang === "es" || lang === "en" ? lang : "es";
+
+  const dict = await getDictionary(safeLang);
 
   return (
-    <html lang={params.lang}>
+    <html lang={safeLang}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
