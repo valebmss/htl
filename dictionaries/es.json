@@ -15,6 +15,18 @@
   "hero": {
     "title": "Somos su aliado estratégico en proyectos de energía"
   },
+  "mission": {
+  "title": "Nuestra misión",
+  "description": "Ofrecer a nuestros clientes un portafolio de servicios de alta calidad, confiables, eficientes, amigables con el medio ambiente y con aportes altamente innovadores."
+},
+"values": {
+  "title": "Nuestros valores",
+  "description": "Creemos y estamos comprometidos con nuestros valores: integridad, calidad, responsabilidad e innovación."
+},
+"team": {
+  "title": "Nuestro equipo",
+  "description": "Contamos con un equipo profesional de varios países con excelente conocimiento técnico, altamente colaborativo y con capacidad y proactividad en la resolución de las dificultades propias de proyectos complejos."
+},
   "energyProyect": {
     "title": "Ejecución Integral de Proyectos de Energía",
     "summary": "Brindamos soporte experto en cada etapa del ciclo del proyecto.",

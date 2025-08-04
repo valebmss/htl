@@ -14,6 +14,19 @@
   "hero": {
     "title": "We are your strategic partner in energy projects"
   },
+  "mission": {
+  "title": "Our Mission",
+  "description": "To offer our clients a portfolio of high-quality, reliable, efficient, environmentally friendly, and highly innovative services."
+},
+"values": {
+  "title": "Our Values",
+  "description": "We believe in and are committed to our values: integrity, quality, responsibility, and innovation."
+},
+"team": {
+  "title": "Our Team",
+  "description": "We have a professional team from several countries with excellent technical knowledge, highly collaborative, proactive, and capable of solving the challenges of complex projects."
+}
+,
   "energyProyect": {
     "title": "Comprehensive Execution of Energy Projects",
     "summary": "We provide expert support at every stage of the project cycle.",

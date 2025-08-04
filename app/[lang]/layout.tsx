@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React, { ReactNode } from "react";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -14,7 +15,13 @@ type Props = {
   params: { lang: 'es' | 'en' };
 };
 
-export default async function RootLayout({ children, params }: Props) {
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: ReactNode;
+  params: Promise<{ lang: string }>;
+}) {
     const resolvedParams = await params;
   const lang = Array.isArray(resolvedParams.lang)
     ? resolvedParams.lang[0]
