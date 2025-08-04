@@ -1,8 +1,8 @@
-
 import { groq } from 'next-sanity';
 import { createClient } from 'next-sanity';
+import Link from 'next/link';
 import Image from 'next/image';
-import { PortableText, PortableTextComponents } from '@portabletext/react';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
@@ -12,90 +12,74 @@ const client = createClient({
 });
 
 const query = groq`
-  *[_type == "post" && slug.current == $slug][0]{
+  *[_type == "post"] | order(_createdAt desc){
+    _id,
     title,
-    mainImage,
-    body
+    slug,
+    excerpt,
+    mainImage
   }
 `;
 
-const components: PortableTextComponents = {
-  block: {
-    h2: ({ children }) => <h2 className="text-2xl font-bold mt-6 mb-2 text-secondary">{children}</h2>,
-    normal: ({ children }) => <p className="mb-4 leading-relaxed text-gray-800">{children}</p>,
-  },
-  list: {
-    bullet: ({ children }) => <ul className="list-disc ml-5 mb-4 text-gray-800">{children}</ul>,
-  },
-  listItem: {
-    bullet: ({ children }) => <li className="mb-1">{children}</li>,
-  },
-  types: {
-    image: ({ value }) => {
-      const ref = value.asset?._ref;
-      if (!ref) return null;
-
-      const url = `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET}/${ref
-        .replace('image-', '')
-        .replace('-jpg', '.jpg')
-        .replace('-png', '.png')}`;
-
-      return (
-        <Image
-          src={url}
-          alt="Imagen del contenido"
-          width={800}
-          height={500}
-          className="rounded-lg my-6"
-        />
-      );
-    }
-  }
-};
-
-type Props = {
-  params: { slug: string };
-};
-
-export default async function PostPage(
-  props: {
-    params: Promise<{ slug: string }>;
-  }
-) {
+export default async function BlogList(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
-  const post = await client.fetch(query, { slug: params.slug });
+  const slug = params.slug;
 
-  if (!post) {
-    return (
-      <div className="text-center py-20 text-gray-500">Post no encontrado</div>
-    );
-  }
+  const post = await client.fetch(query, { slug });
+  const posts = await client.fetch(query);
 
   return (
-    <article className="max-w-4xl mx-auto px-6 py-16">
-      <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-black">{post.title}</h1>
+    <main className="min-h-screen bg-[#f7f7f7] py-20 px-6">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-4xl font-bold text-secondary text-center mb-12">
+          Últimas Publicaciones
+        </h1>
 
-      {post.mainImage?.asset?._ref && (
-        <div className="relative w-full h-[400px] md:h-[500px] mb-10 rounded-xl overflow-hidden shadow-xl">
-          <Image
-            src={`https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET}/${post.mainImage.asset._ref
-              .replace('image-', '')
-              .replace('-jpg', '.jpg')
-              .replace('-png', '.png')}`}
-            alt={post.title}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 800px"
-            priority
-          />
-        </div>
-      )}
+        <ul className="grid gap-8 md:grid-cols-2">
+          {posts.map((post: any) => {
+            const imageUrl = post.mainImage?.asset?._ref
+              ? `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET}/${post.mainImage.asset._ref
+                  .replace('image-', '')
+                  .replace('-jpg', '.jpg')
+                  .replace('-png', '.png')}`
+              : null;
 
-      <div className="prose prose-lg max-w-none text-black prose-h2:text-secondary prose-a:text-primary prose-img:rounded-lg">
-        <PortableText value={post.body} components={components} />
+            return (
+              <li
+                key={post._id}
+                className="bg-white border border-gray-200 rounded-xl shadow-soft hover:border-primary hover:shadow-md transition overflow-hidden"
+              >
+                {imageUrl && (
+                  <Image
+                    src={imageUrl}
+                    alt={post.title}
+                    width={600}
+                    height={300}
+                    className="w-full h-48 object-cover"
+                  />
+                )}
+                <div className="p-6">
+                  <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                    {post.title}
+                  </h2>
+                  {post.excerpt && (
+                    <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                  )}
+                  <Link
+                    href={`/blog/${post.slug.current}`}
+                    className="inline-flex items-center text-[#9f28e7] font-medium hover:underline"
+                  >
+                    Leer más
+                    <ArrowRightIcon className="w-4 h-4 ml-2" />
+                  </Link>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
-    </article>
+    </main>
   );
 }
-
-export const revalidate = 60;
