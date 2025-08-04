@@ -35,7 +35,7 @@ const dict: DictType = {
       image: "/images/section3.jpg",
     },
     {
-      title: "Sección 4",
+      title: "Cierre",
       description: ["Descripción M", "Descripción N"],
       image: "/images/section4.jpg",
     },

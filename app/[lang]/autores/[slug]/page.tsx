@@ -18,7 +18,13 @@ const query = groq`
   }
 `;
 
-export default async function AuthorPage({ params }: { params: { slug: string } }) {
+export default async function AuthorPage(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+) {
+  const params = await props.params;
+  const post = await client.fetch(query, { slug: params.slug });
   const author = await client.fetch(query, { slug: params.slug });
 
   if (!author) return <div className="text-center py-20 text-gray-500">Autor no encontrado</div>;
