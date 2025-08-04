@@ -21,11 +21,7 @@ const query = groq`
   }
 `;
 
-export default async function BlogList(props: { params: Promise<{ slug: string }> }) {
-  const params = await props.params;
-  const slug = params.slug;
-
-  const post = await client.fetch(query, { slug });
+export default async function BlogList({ params }: { params: { lang: string } }) {
   const posts = await client.fetch(query);
 
   return (
@@ -68,7 +64,7 @@ export default async function BlogList(props: { params: Promise<{ slug: string }
                     </p>
                   )}
                   <Link
-                    href={`/blog/${post.slug.current}`}
+                    href={`/es/blog/${post.slug.current}`}
                     className="inline-flex items-center text-[#9f28e7] font-medium hover:underline"
                   >
                     Leer más
