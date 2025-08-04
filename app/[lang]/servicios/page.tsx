@@ -28,7 +28,7 @@ const servicios = [
   },
   {
     title: 'Configuración de equipos',
-    image: '/img/servicios/configuracion.jpg',
+    image: '/img/servicios/s3.jpg',
     items: [
       'Relés de protección',
       'Reguladores de tensión',
@@ -38,7 +38,7 @@ const servicios = [
   },
   {
     title: 'Pruebas en fábrica',
-    image: '/img/servicios/fabrica.jpg',
+    image: '/img/servicios/s4.jpg',
     items: [
       'Protocolos de prueba PRE-FAT y FAT',
       'Pruebas funcionales de relés',
@@ -48,7 +48,7 @@ const servicios = [
   },
   {
     title: 'Puesta en servicio y comisionamiento',
-    image: '/img/servicios/comisionamiento.jpg',
+    image: '/img/servicios/s5.jpg',
     items: [
       'Ensayos OCC y archivos',
       'Verificación de cableados y baterías',
@@ -58,7 +58,7 @@ const servicios = [
   },
   {
     title: 'Alquiler de equipos',
-    image: '/img/servicios/alquiler.jpg',
+    image: '/img/servicios/s6.jpg',
     items: [
       'CPC100, CMC356, Tangente Delta',
       'Inyección primaria y secundaria',
