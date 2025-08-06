@@ -88,7 +88,7 @@
         "image": "/img/colaboradores/Ruben.jpeg"
       },
       {
-        "name": "Andrés Felipe Juradoi",
+        "name": "Andrés Felipe Jurado",
         "role": "Field Engineer",
         "description": "Electrical engineer specialized in testing and commissioning of power systems. Andrés has participated in numerous projects across South America. He enjoys reading and learning languages.",
         "image": "/img/colaboradores/Felipe.png"
@@ -103,6 +103,75 @@
     "description": "We have the experience to support you through all phases of your energy project: from initial concept through bidding, planning, and execution to successful closure. Our approach ensures efficiency, quality, and compliance every step of the way.",
     "button": "Discover more"
   },
+  "servicios-section": {
+  "title": "Our Services",
+  "subtitle": "We offer comprehensive solutions for every stage of your electrical project.",
+  "servicios": [
+    {
+      "title": "Consulting",
+      "image": "/img/servicios/s1.jpg",
+      "items": [
+        "Electrical protection calculations",
+        "Load and short-circuit calculations",
+        "Coordination and power flow studies",
+        "Generator plant interconnection",
+        "Electrical system planning",
+        "Arc flash studies"
+      ]
+    },
+    {
+      "title": "Secondary Engineering",
+      "image": "/img/servicios/s2.jpg",
+      "items": [
+        "Single-line and logic diagrams",
+        "Panel and signal definitions",
+        "Network and IED architecture",
+        "Interconnection design",
+        "Control system listings"
+      ]
+    },
+    {
+      "title": "Equipment Configuration",
+      "image": "/img/servicios/s3.jpg",
+      "items": [
+        "Protection relays",
+        "Voltage regulators",
+        "Bay units, IVO boxes",
+        "Integration with Siemens, ABB, SEL"
+      ]
+    },
+    {
+      "title": "Factory Testing",
+      "image": "/img/servicios/s4.jpg",
+      "items": [
+        "PRE-FAT and FAT test protocols",
+        "Relay functional testing",
+        "IED signal simulation",
+        "Time synchronization"
+      ]
+    },
+    {
+      "title": "Commissioning",
+      "image": "/img/servicios/s5.jpg",
+      "items": [
+        "OCC tests and files",
+        "Cable and battery verification",
+        "CT and VT testing",
+        "Field measurements"
+      ]
+    },
+    {
+      "title": "Equipment Rental",
+      "image": "/img/servicios/s6.jpg",
+      "items": [
+        "CPC100, CMC356, Tangent Delta",
+        "Primary and secondary injection",
+        "Power meters and GPS"
+      ]
+    }
+  ]
+}
+,
   "referencesTitle": "Our References",
   "referencesSubtitle": "We are in good company. They have trusted us:"
 }
