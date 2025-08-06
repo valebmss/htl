@@ -21,10 +21,28 @@ const dict = {
     title: "Nuestro Equipo",
     members: [
       {
-        name: "Nombre Ejemplo",
-        role: "Rol Ejemplo",
-        description: "Descripción del miembro.",
-        image: "/images/member1.png",
+        name: "Horacio Trujillo Loli",
+        role: "CEO",
+        description: "Fundador y su solvencia técnica y conocimiento y excelente gestión interpersonal generan grandes sinergias para lograr los más complejos retos de los proyectos. Horacio es la fuerza motriz detrás de la empresa. Le encanta mantenerse ocupado y conocer nuevas tecnologías para aportar innovación a sus soluciones. ",
+        image: "/img/colaboradores/Horacio.jpg",
+      },
+            {
+        name: "Leyla Becerra",
+        role: "Consultora Senior",
+        description: "A Leyla le encanta la innovación y los desafíos. Con su experiencia de varios años como gerente de automatización de subestaciones y centrales de generación, ha adquirido una gran trayectoria que respalda al equipo de trabajo y  asesora de forma muy profesional para que nuestros clientes siempre se lleven la mejor solución.",
+        image: "/img/colaboradores/leyla.jpg",
+      },
+            {
+        name: "Ruben Dario Arias",
+        role: "Consultor Senior",
+        description: "Ingeniero eléctrico con amplia experiencia en el sector de generación de energía eléctrica en plantas térmicas, hidráulicas y de biomasa. Orientado a incrementar la eficiencia de procesos, uso racional de la energía, monitoreo y diseño de procedimientos operacionales y de seguridad. Habilidad en la implementación de programas de capacitación técnica, trabajo en equipo y resultados. ",
+        image: "/img/colaboradores/Ruben.jpeg",
+      },
+            {
+        name: "Andrés Felipe Juradoi",
+        role: "Ingeniero Campo",
+        description: "Ingeniero eléctrico que se ha desempeñado en pruebas y puesta en servicio de sistemas de potencia.  Andrés ha participado en numerosos proyectos en varios países de suramérica. Le encanta leer y aprender idiomas.",
+        image: "/img/colaboradores/Felipe.png",
       },
     ],
   },
