@@ -24,7 +24,7 @@ const dict = {
         name: "Horacio Trujillo Loli",
         role: "CEO",
         description: "Fundador y su solvencia técnica y conocimiento y excelente gestión interpersonal generan grandes sinergias para lograr los más complejos retos de los proyectos. Horacio es la fuerza motriz detrás de la empresa. Le encanta mantenerse ocupado y conocer nuevas tecnologías para aportar innovación a sus soluciones. ",
-        image: "/img/colaboradores/Horacio.jpg",
+        image: "/img/colaboradores/DSC_0101.jpg",
       },
             {
         name: "Leyla Becerra",

@@ -21,7 +21,7 @@ export default function ReferencesSection({ dict }: ReferencesProps) {
         <div className="flex flex-wrap justify-center items-center gap-10">
           <Image src="/logos/riederlogo2.png" alt="Rieder" width={120} height={60} />
           <Image src="/logos/logo-isa.png" alt="ISA" width={100} height={50} />
-          <Image src="/logos/Logo-siemens.png" alt="Siemens" width={140} height={60} />
+          <Image src="/logos/siemens.png" alt="Siemens" width={140} height={60} />
           <Image src="/logos/logo-text-kallpa.png" alt="Kallpa" width={130} height={50} />
           <Image src="/logos/descarga.png" alt="Ande" width={100} height={50} />
         </div>
