@@ -99,31 +99,16 @@ export default function NosotrosPage() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-blue-200 px-6 md:px-12 py-16"
+        className="bg-[#91ACD6] px-6 md:px-12 py-16"
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-semibold text-white mb-4">
-            {dict.mission.title}
+            {dict.values.title}
           </h2>
-          <p className="text-white text-lg">{dict.mission.subtitle}</p>
         </div>
       </motion.section>
 
-      {/* Valores */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="bg-white px-6 md:px-12 py-16"
-      >
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-semibold text-[#3a4b66] mb-4">
-            {dict.values.title}
-          </h2>
-          <p className="text-gray-700">{dict.values.subtitle}</p>
-        </div>
-      </motion.section>
+
 
       {/* Equipo */}
       <motion.section

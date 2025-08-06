@@ -26,17 +26,14 @@ export default async function RootLayout({
 
   const dict = await getDictionary(safeLang);
     return (
-    <html lang="en">
-      <body>
-        <Header dict={dict.header} />
+      <div>
+       
                 <main>
                           {children}
 
 
                 </main>
-                <Footer dict={dict.footer} />
-      </body>
-    </html>
+      </div>
     );
   
 
