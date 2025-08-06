@@ -27,9 +27,7 @@ export default async function BlogList(props: { params: Promise<{ slug: string }
   return (
     <main className="min-h-screen bg-[#f7f7f7] py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-secondary text-center mb-12">
-          Últimas Publicaciones
-        </h1>
+
 
         <ul className="grid gap-8 md:grid-cols-2">
           {posts.map((post: any) => {
@@ -65,7 +63,7 @@ export default async function BlogList(props: { params: Promise<{ slug: string }
                   )}
                   <Link
                     href={`/es/blog/${post.slug.current}`}
-                    className="inline-flex items-center text-[#9f28e7] font-medium hover:underline"
+                    className="inline-flex items-center text-[#91ACD6] font-medium hover:underline"
                   >
                     Leer más
                     <ArrowRightIcon className="w-4 h-4 ml-2" />
