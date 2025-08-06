@@ -56,8 +56,47 @@
 "team": {
   "title": "Our Team",
   "description": "We have a professional team from several countries with excellent technical knowledge, highly collaborative, proactive, and capable of solving the challenges of complex projects."
-}
-,
+},
+"nosotros-section": {
+  "hero": {
+    "title": "We are your strategic partner in energy projects",
+    "subtitle": "We can support you in all stages of an energy project.",
+    "button": "Discover more"
+  },
+  "values": {
+    "title": "We dedicate all our technical capacity, experience, and reliability so that our clients achieve their objectives with the highest efficiency and quality"
+  },
+  "team": {
+    "title": "Our Team",
+    "members": [
+      {
+        "name": "Horacio Trujillo Loli",
+        "role": "CEO",
+        "description": "Founder with strong technical expertise and excellent interpersonal skills, generating powerful synergies to achieve the most complex project challenges. Horacio is the driving force behind the company and enjoys staying busy and discovering new technologies to innovate his solutions.",
+        "image": "/img/colaboradores/DSC_0101.jpg"
+      },
+      {
+        "name": "Leyla Becerra",
+        "role": "Senior Consultant",
+        "description": "Leyla loves innovation and challenges. With years of experience as an automation manager for substations and power plants, she brings great expertise to the team and advises clients professionally to ensure optimal solutions.",
+        "image": "/img/colaboradores/leyla.jpg"
+      },
+      {
+        "name": "Ruben Dario Arias",
+        "role": "Senior Consultant",
+        "description": "Electrical engineer with extensive experience in thermal, hydro, and biomass power generation. Focused on process efficiency, energy optimization, and operational safety. Skilled in technical training and teamwork to deliver results.",
+        "image": "/img/colaboradores/Ruben.jpeg"
+      },
+      {
+        "name": "Andrés Felipe Juradoi",
+        "role": "Field Engineer",
+        "description": "Electrical engineer specialized in testing and commissioning of power systems. Andrés has participated in numerous projects across South America. He enjoys reading and learning languages.",
+        "image": "/img/colaboradores/Felipe.png"
+      }
+    ]
+  }
+},
+
   "energyProyect": {
     "title": "Comprehensive Execution of Energy Projects",
     "summary": "We provide expert support at every stage of the project cycle.",

@@ -1,6 +1,6 @@
 import { getDictionary } from "../../../utils/getDictionary";
 import Global from "../../../components/Global";
-import ContactoPage from "../../../components/ContactoPage";
+import ContactoPage from "../../../components/pages/ContactoPage";
 
 type PageProps = {
   readonly params: Promise<{ lang: string | string[] | undefined }>;

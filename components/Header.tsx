@@ -103,63 +103,63 @@ export default function Header({ dict }: HeaderProps) {
       </div>
 
       {/* Navegación */}
-      <div
-        style={{ backgroundColor: '#91ACD6' }}
-        className={`md:block transition-all duration-300 ${
-          menuOpen ? 'block' : 'hidden'
-        }`}
+{/* Navegación */}
+<div
+  style={{ backgroundColor: '#91ACD6' }}
+  className={`md:block transition-all duration-300 ${menuOpen ? 'block' : 'hidden'}`}
+>
+  <div className="max-w-7xl mx-auto px-8 sm:px-8 lg:px-10 py-6 flex flex-col md:flex-row md:items-center text-white">
+    {/* Enlaces de navegación */}
+    <div className="flex flex-col md:flex-row gap-6 md:gap-8 md:items-center flex-wrap">
+      <Link href={`/${currentLang}`} className="hover:text-blue-200 transition">{dict.nav.inicio}</Link>
+      <Link href={`/${currentLang}/nosotros`} className="hover:text-blue-200 transition">{dict.nav.about}</Link>
+      <Link href={`/${currentLang}/servicios`} className="hover:text-blue-200 transition">{dict.nav.services}</Link>
+      <Link href={`/${currentLang}/proyectos`} className="hover:text-blue-200 transition">{dict.nav.proyectos}</Link>
+      <Link href={`/${currentLang}/blog`} className="hover:text-blue-200 transition">{dict.nav.historiasexito}</Link>
+      <Link href={`/${currentLang}/contacto`} className="hover:text-blue-200 transition">{dict.nav.contact}</Link>
+    </div>
+
+    {/* Botón de contacto a la derecha */}
+    <div className="mt-4 md:mt-0 md:ml-auto">
+      <Link
+        href={`/${currentLang}/contacto`}
+        className="bg-white px-4 py-2 rounded-md font-medium hover:bg-blue-100 transition text-[#91ACD6]"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row gap-4 md:gap-6 items-start md:items-center text-white">
-          <Link href={`/${currentLang}`} className="hover:text-blue-200 transition">{dict.nav.inicio}</Link>
-          <Link href={`/${currentLang}/nosotros`} className="hover:text-blue-200 transition">{dict.nav.about}</Link>
-          <Link href={`/${currentLang}/servicios`} className="hover:text-blue-200 transition">{dict.nav.services}</Link>
-          <Link href={`/${currentLang}/proyectos`} className="hover:text-blue-200 transition">{dict.nav.proyectos}</Link>
-          <Link href={`/${currentLang}/blog`} className="hover:text-blue-200 transition">{dict.nav.historiasexito}</Link>
-          <Link href={`/${currentLang}/contacto`} className="hover:text-blue-200 transition">{dict.nav.contact}</Link>
+        {dict.nav.contact}
+      </Link>
+    </div>
+  </div>
 
-          <Link
-            href={`/${currentLang}/contacto`}
-            className="mt-4 md:mt-0 bg-white px-4 py-2 rounded-md font-medium hover:bg-blue-100 transition"
-            style={{ color: '#91ACD6' }}
-          >
-            {dict.nav.contact}
-          </Link>
-        </div>
+  {/* Buscador y selector de idioma en móvil */}
+  <div className="md:hidden px-4 pb-4 space-y-4">
+    <input
+      type="text"
+      placeholder={dict.searchPlaceholder}
+      className="w-full px-4 py-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-300 transition border border-gray-300"
+    />
+    <div className="flex justify-center">
+      <button
+        onClick={switchLanguage}
+        className="relative inline-flex items-center px-1 py-1 bg-white border border-gray-300 rounded-full w-20 h-8 transition-all duration-300"
+      >
+        <span
+          className={`absolute left-1 text-sm font-medium transition-transform duration-300 ${currentLang === 'es' ? 'text-[#91ACD6]' : 'text-gray-400'}`}
+        >
+          ES
+        </span>
+        <span
+          className={`absolute right-1 text-sm font-medium transition-transform duration-300 ${currentLang === 'en' ? 'text-[#91ACD6]' : 'text-gray-400'}`}
+        >
+          EN
+        </span>
+        <span
+          className={`absolute bg-[#91ACD6] w-6 h-6 rounded-full transform transition-transform duration-300 ${currentLang === 'es' ? 'translate-x-0' : 'translate-x-12'}`}
+        />
+      </button>
+    </div>
+  </div>
 
-        {/* Buscador y selector de idioma en móvil */}
-        <div className="md:hidden px-4 pb-4 space-y-4">
-          <input
-            type="text"
-            placeholder={dict.searchPlaceholder}
-            className="w-full px-4 py-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-300 transition border border-gray-300"
-          />
-          <div className="flex justify-center">
-            <button
-              onClick={switchLanguage}
-              className="relative inline-flex items-center px-1 py-1 bg-white border border-gray-300 rounded-full w-20 h-8 transition-all duration-300"
-            >
-              <span
-                className={`absolute left-1 text-sm font-medium transition-transform duration-300 ${
-                  currentLang === 'es' ? 'text-[#91ACD6]' : 'text-gray-400'
-                }`}
-              >
-                ES
-              </span>
-              <span
-                className={`absolute right-1 text-sm font-medium transition-transform duration-300 ${
-                  currentLang === 'en' ? 'text-[#91ACD6]' : 'text-gray-400'
-                }`}
-              >
-                EN
-              </span>
-              <span
-                className={`absolute bg-[#91ACD6] w-6 h-6 rounded-full transform transition-transform duration-300 ${
-                  currentLang === 'es' ? 'translate-x-0' : 'translate-x-12'
-                }`}
-              />
-            </button>
-          </div>
-        </div>
+
       </div>
     </header>
   );
