@@ -98,31 +98,34 @@ export default function NosotrosPage({ dict }: Props) {
           <h2 className="text-3xl font-semibold text-[#3a4b66] text-center mb-12">
             {dict.team.title}
           </h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            {dict.team.members.map((member, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: i * 0.2 }}
-                viewport={{ once: true }}
-                className="flex items-start gap-6"
-              >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={100}
-                  height={100}
-                  className="rounded-full object-cover"
-                />
-                <div>
-                  <h3 className="text-lg font-semibold">{member.name}</h3>
-                  <p className="text-sm italic text-gray-500">{member.role}</p>
-                  <p className="text-gray-700 text-sm mt-2">{member.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+<div className="grid md:grid-cols-2 gap-12">
+  {dict.team.members.map((member, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: i * 0.2 }}
+      viewport={{ once: true }}
+      className="flex items-start gap-6"
+    >
+      <div className="min-w-[150px] min-h-[150px] relative">
+        <Image
+          src={member.image}
+          alt={member.name}
+          width={150}
+          height={150}
+          className="rounded-full object-cover w-[150px] h-[150px]"
+        />
+      </div>
+      <div>
+        <h3 className="text-lg font-semibold">{member.name}</h3>
+        <p className="text-sm italic text-gray-500">{member.role}</p>
+        <p className="text-gray-700 text-sm mt-2">{member.description}</p>
+      </div>
+    </motion.div>
+  ))}
+</div>
+
         </div>
       </motion.section>
     </main>
