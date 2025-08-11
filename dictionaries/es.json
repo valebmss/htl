@@ -105,6 +105,55 @@
     "description": "Contamos con la experiencia necesaria para acompañarte en todas las fases de tu proyecto energético: desde la concepción inicial, pasando por la etapa de oferta, planeación y ejecución, hasta el cierre exitoso. Nuestro enfoque garantiza eficiencia, calidad y cumplimiento en cada paso.",
     "button": "Descubrir más"
   },
+  "proyectos-section": {
+  "heroTitle": "Ejecución de Proyectos de Energía",
+  "heroDescription": "Nuestra experiencia nos permite dar soporte a sus necesidades en proyectos de energía en todas sus etapas: concepción del proyecto, etapa de oferta, planeación, ejecución y cierre.",
+  "heroButton": "Descubrir más",
+  "sections": [
+    {
+      "title": "Estudio Inicial",
+      "description": [
+        "Elaboración, revisión y/o validación de términos de referencia o pliegos técnicos.",
+        "Análisis del riesgo.",
+        "Soporte en la elaboración de planes de ejecución.",
+        "Soporte en la elaboración de presupuestos económicos."
+      ],
+      "image": "/images/section1.jpg"
+    },
+    {
+      "title": "Oferta",
+      "description": [
+        "Análisis de términos de referencia o pliegos técnicos.",
+        "Análisis y delimitación del alcance e identificación temprana de riesgos.",
+        "Soporte en la preparación de oferta técnica.",
+        "Revisión de ofertas técnicas de terceros.",
+        "Elaboración de estrategias, planes de trabajo y cronogramas de ejecución."
+      ],
+      "image": "/img/servicios/s1.jpg"
+    },
+    {
+      "title": "Ejecución",
+      "description": [
+        "Elaboración de estrategias, planes de trabajo y cronogramas.",
+        "Identificación de riesgos y planes de mitigación.",
+        "Revisión de cumplimiento del alcance técnico.",
+        "Seguimiento y trazabilidad del proyecto técnico."
+      ],
+      "image": "/images/section3.jpg"
+    },
+    {
+      "title": "Cierre del proyecto",
+      "description": [
+        "Soporte en el levantamiento de pendientes.",
+        "Actas de cierre técnico.",
+        "Documentación de cierre: manuales y digitalización.",
+        "Capacitación y soporte en operación y mantenimiento."
+      ],
+      "image": "/images/section4.jpg"
+    }
+  ]
+}
+,
   "servicios-section": {
   "title": "Nuestros Servicios",
   "subtitle": "Ofrecemos soluciones integrales para cada etapa de tu proyecto eléctrico.",
