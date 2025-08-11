@@ -205,7 +205,7 @@
         "Review of technical scope compliance.",
         "Project technical monitoring and traceability."
       ],
-      "image": "/images/section3.jpg"
+      "image": "/img/hero.jpeg"
     },
     {
       "title": "Project Closure",
@@ -215,7 +215,7 @@
         "Closure documentation: manuals and digitization.",
         "Training and support in operation and maintenance."
       ],
-      "image": "/images/section4.jpg"
+      "image": "/img/servicios/s4.jpg"
     }
   ]
 },
