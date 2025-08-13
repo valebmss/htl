@@ -3,33 +3,37 @@
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
-const datos = [
-  { valor: 5, label: 'Países' },
-  { valor: 28, label: 'Proyectos' },
-  { valor: 28, label: 'Subestaciones' },
-  { valor: 7, label: 'Centrales de generación' },
-
-];
-
-
 type ContadorProyectosProps = {
   dict: {
     title: string;
     description: string;
+    datos: {
+      valor: number;
+      label: string;
+    }[];
   };
-
 };
 
-export default function ContadorProyectos({ dict }: ContadorProyectosProps  ) {
+export default function ContadorProyectos({ dict }: ContadorProyectosProps) {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
 
   return (
-    <section className="bg-[#2f4381] py-20 text-white relative overflow-hidden" ref={ref}>
+    <section
+      className="bg-[#2f4381] py-20 text-white relative overflow-hidden"
+      ref={ref}
+    >
+      {/* Título y descripción */}
+      <div className="max-w-4xl mx-auto px-6 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4">{dict.title}</h2>
+        <p className="text-lg text-white/90">{dict.description}</p>
+      </div>
+
+      {/* Contadores */}
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center z-10 relative">
-        {datos.map((item, i) => (
+        {dict.datos.map((item, i) => (
           <div key={i}>
             <div className="text-5xl font-semibold mb-2">
               {inView ? <CountUp end={item.valor} duration={2} /> : '0'}
@@ -39,7 +43,7 @@ export default function ContadorProyectos({ dict }: ContadorProyectosProps  ) {
         ))}
       </div>
 
-      {/* Líneas de fondo estilo SVG decorativo (opcional) */}
+      {/* Fondo decorativo */}
       <div className="absolute inset-0 z-0">
         <svg
           className="w-full h-full"
@@ -54,7 +58,6 @@ export default function ContadorProyectos({ dict }: ContadorProyectosProps  ) {
             strokeOpacity="0.1"
             strokeWidth="1"
           />
-          {/* Agrega más líneas si deseas simular el diseño del fondo */}
         </svg>
       </div>
     </section>

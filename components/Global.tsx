@@ -25,6 +25,9 @@ const query = groq`
 
 export default async function HomeClient({ dict }: { dict: any }) {
 const posts: { title: string; slug: { current: string }; excerpt: string }[] = await client.fetch(query);
+const contadorSection = (dict as any)['contador-proyectos-section'] ?? dict;
+const serviciosSection = (dict as any)['servicios-section-global'] ?? dict;
+
 
   return (
     <div>
@@ -35,10 +38,10 @@ const posts: { title: string; slug: { current: string }; excerpt: string }[] = a
         <EnergyProyectSection dict={dict} />
       </section>
       <section>
-        <ServiciosSection dict={dict} />
+        <ServiciosSection dict={serviciosSection} />
       </section>
       <section>
-        <ContadorProyectos dict={dict} />
+        <ContadorProyectos dict={contadorSection} />
       </section>
       <section>
         <MisionValoresEquipo dict={dict} />

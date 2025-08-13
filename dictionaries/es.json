@@ -152,8 +152,58 @@
       "image": "/img/servicios/s4.jpg"
     }
   ]
+},
+{++
+  "referencesTitle": "Nuestras referencias",
+  "referencesSubtitle": "Tenemos buena compañía. Ellos han confiado en nosotros:",
+  "logos": [
+    { "src": "/logos/riederlogo2.png", "alt": "Rieder", "width": 120, "height": 60 },
+    { "src": "/logos/logo-isa.png", "alt": "ISA", "width": 100, "height": 50 },
+    { "src": "/logos/siemens.png", "alt": "Siemens", "width": 140, "height": 60 },
+    { "src": "/logos/logo-text-kallpa.png", "alt": "Kallpa", "width": 130, "height": 50 },
+    { "src": "/logos/descarga.png", "alt": "Ande", "width": 100, "height": 50 }
+  ],
+  "helpTitle": "¿Cómo podemos ayudar?",
+  "helpDescription": "Contáctanos en cualquier momento",
+  "callUsTitle": "Llámanos",
+  "callUsNumbers": [
+    { "country": "Perú", "number": "+5117390828", "href": "tel:+5117390828" },
+    { "country": "Colombia", "number": "+573017911197", "href": "tel:+573017911197" }
+  ],
+  "emailTitle": "Envíenos un mensaje",
+  "email": "atencionalcliente@htl-cs.com",
+  "followUsTitle": "Síguenos",
+  "linkedinUrl": "https://linkedin.com",
+  "copyright": "Copyright © 2025 HTL",
+  "navLinks": [
+    { "href": "#inicio", "label": "Inicio" },
+    { "href": "#servicios", "label": "Servicios" },
+    { "href": "#proyectos", "label": "Proyectos" },
+    { "href": "#historias", "label": "Historias de éxito" },
+    { "href": "#nosotros", "label": "Sobre nosotros" }
+  ]
 }
 ,
+  
+  "servicios-section-global": {
+    "title": "Lo que ofrecemos",
+    "description": "Servicios diseñados para acompañarte en cada etapa del camino.",
+    "items": [
+      {
+        "title": "Nuestros servicios",
+        "desc": "Conoce nuestro portafolio de servicios."
+      },
+      {
+        "title": "Soporte en proyectos",
+        "desc": "Encuentra el apoyo apropiado para tu proyecto."
+      },
+      {
+        "title": "Historias de éxito",
+        "desc": "Conoce historias de proyectos en los que nuestro aporte hizo la diferencia."
+      }
+    ]
+  },
+
   "servicios-section": {
   "title": "Nuestros Servicios",
   "subtitle": "Ofrecemos soluciones integrales para cada etapa de tu proyecto eléctrico.",
@@ -223,6 +273,26 @@
   ]
 }
 ,
-  "referencesTitle": "Nuestras referencias",
-  "referencesSubtitle": "Tenemos buena compañía. Ellos han confiado en nosotros:"
+"contador-proyectos-section": {
+  "title": "Nuestra Experiencia en Cifras",
+  "description": "Estos números reflejan el alcance y la magnitud de nuestro trabajo en proyectos energéticos alrededor del mundo.",
+  "datos": [
+    { "valor": 5, "label": "Países" },
+    { "valor": 28, "label": "Proyectos" },
+    { "valor": 28, "label": "Subestaciones" },
+    { "valor": 7, "label": "Centrales de generación" }
+  ]
 }
+,
+
+  "referencesTitle": "Nuestras referencias",
+  "referencesSubtitle": "Tenemos buena compañía. Ellos han confiado en nosotros:",
+  "logos": [
+    { "src": "/logos/riederlogo2.png", "alt": "Rieder", "width": 120, "height": 60 },
+    { "src": "/logos/logo-isa.png", "alt": "ISA", "width": 100, "height": 50 },
+    { "src": "/logos/siemens.png", "alt": "Siemens", "width": 140, "height": 60 },
+    { "src": "/logos/logo-text-kallpa.png", "alt": "Kallpa", "width": 130, "height": 50 },
+    { "src": "/logos/descarga.png", "alt": "Ande", "width": 100, "height": 50 }
+  ]
+}
+
