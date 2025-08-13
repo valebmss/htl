@@ -45,6 +45,7 @@ export default async function RootLayout({
       <body className="bg-white text-gray-900 font-sans" style={{ fontFamily: "DM Sans, sans-serif" }}>
         <Header dict={dict.header} />
         {children}
+        
         <Footer dict={dict.footer} />
       </body>
     </html>

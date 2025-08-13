@@ -2,78 +2,75 @@
 
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import { FaLinkedin } from 'react-icons/fa';
-import ReferencesSection from './ReferenceSection';
 
-type FooterProps = {
-  dict: {
-    referencesTitle: string;
-    referencesSubtitle: string;
-    logos: {
-      src: string;
-      alt: string;
-      width: number;
-      height: number;
-    }[];
-    helpTitle: string;
-    helpDescription: string;
-    callUsTitle: string;
-    callUsNumbers: { country: string; number: string; href: string }[];
-    emailTitle: string;
-    email: string;
-    followUsTitle: string;
-    linkedinUrl: string;
-    copyright: string;
-    navLinks: { href: string; label: string }[];
-  };
+type Phone = { country: string; number: string; href: string };
+type NavLink = { href: string; label: string };
+type FooterDict = {
+  referencesTitle?: string;
+  referencesSubtitle?: string;
+  logos?: { src: string; alt: string; width: number; height: number }[];
+  helpTitle: string;
+  helpDescription: string;
+  callUsTitle: string;
+  callUsNumbers?: Phone[];
+  emailTitle: string;
+  email: string;
+  followUsTitle: string;
+  linkedinUrl: string;
+  copyright: string;
+  navLinks?: NavLink[];
 };
 
-export default function Footer({ dict }: FooterProps) {
+type Props =
+  | { dict: FooterDict }                       // dict plano
+  | { dict: { footer: FooterDict } };          // dict.footer
+
+export default function Footer(props: Props) {
+  // Normaliza: toma dict.footer si existe; si no, usa dict plano
+  const d = (props as any).dict.footer ?? (props as any).dict as FooterDict;
+
   return (
     <div>
-      <ReferencesSection
-        dict={{
-          referencesTitle: dict.referencesTitle,
-          referencesSubtitle: dict.referencesSubtitle,
-          logos: dict.logos
-        }}
-      />
-
       <footer className="bg-[#5e7292] text-white text-sm">
         {/* Top section */}
         <div className="max-w-7xl mx-auto py-12 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-b border-white/10">
           {/* Contacto */}
           <div>
-            <h4 className="text-base font-semibold mb-2">{dict.helpTitle}</h4>
-            <p className="mb-1">{dict.helpDescription}</p>
+            <h4 className="text-base font-semibold mb-2">{d.helpTitle}</h4>
+            <p className="mb-1">{d.helpDescription}</p>
           </div>
 
           {/* Teléfonos */}
           <div>
-            <h4 className="text-base font-semibold mb-2">{dict.callUsTitle}</h4>
-            {dict.callUsNumbers.map((tel, i) => (
+            <h4 className="text-base font-semibold mb-2">{d.callUsTitle}</h4>
+            {(d.callUsNumbers ?? []).length > 0 ? (
+              d.callUsNumbers!.map((tel: Phone, i: number) => (
               <p key={i}>
                 {tel.country}:{' '}
                 <a href={tel.href} className="hover:underline">
-                  {tel.number}
+                {tel.number}
                 </a>
               </p>
-            ))}
+              ))
+            ) : (
+              <p className="opacity-70">—</p>
+            )}
           </div>
 
           {/* Email */}
           <div>
-            <h4 className="text-base font-semibold mb-2">{dict.emailTitle}</h4>
-            <a href={`mailto:${dict.email}`} className="hover:underline">
-              {dict.email}
+            <h4 className="text-base font-semibold mb-2">{d.emailTitle}</h4>
+            <a href={`mailto:${d.email}`} className="hover:underline">
+              {d.email}
             </a>
           </div>
 
           {/* Redes */}
           <div>
-            <h4 className="text-base font-semibold mb-2">{dict.followUsTitle}</h4>
+            <h4 className="text-base font-semibold mb-2">{d.followUsTitle}</h4>
             <div className="flex items-center gap-3 mt-2">
               <a
-                href={dict.linkedinUrl}
+                href={d.linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#a1c4f4]"
@@ -87,15 +84,19 @@ export default function Footer({ dict }: FooterProps) {
         {/* Bottom section */}
         <div className="bg-[#4d5e78] py-4 px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-200 text-xs relative">
           <div>
-            {dict.copyright} <span className="ml-2">🇪🇸</span>
+            {d.copyright} <span className="ml-2">🇪🇸</span>
           </div>
 
           <div className="flex items-center space-x-4">
-            {dict.navLinks.map((link, i) => (
+            {(d.navLinks ?? []).length > 0 ? (
+              d.navLinks!.map((link: NavLink, i: number) => (
               <a key={i} href={link.href} className="hover:underline">
                 {link.label}
               </a>
-            ))}
+              ))
+            ) : (
+              <span className="opacity-70">—</span>
+            )}
           </div>
 
           <a

@@ -7,9 +7,62 @@
       "services": "Servicios",
       "proyectos": "Proyectos",
       "historiasexito": "Historias de Éxito",
-
       "blog": "Blog",
       "contact": "Contáctanos"
+    }
+  },
+  "hero": {
+    "title": "Somos su aliado estratégico en proyectos de energía"
+  },
+  "mission": {
+    "title": "Nuestra misión",
+    "description": "Ofrecer a nuestros clientes un portafolio de servicios de alta calidad, confiables, eficientes, amigables con el medio ambiente y con aportes altamente innovadores."
+  },
+  "values": {
+    "title": "Nuestros valores",
+    "description": "Creemos y estamos comprometidos con nuestros valores: integridad, calidad, responsabilidad e innovación."
+  },
+  "team": {
+    "title": "Nuestro equipo",
+    "description": "Contamos con un equipo profesional de varios países con excelente conocimiento técnico, altamente colaborativo y con capacidad y proactividad en la resolución de las dificultades propias de proyectos complejos."
+  },
+  "nosotros-section": {
+    "hero": {
+      "title": "Somos su aliado estratégico en proyectos de energía",
+      "subtitle": "Podemos apoyarlo en todas las etapas de un proyecto de energía.",
+      "button": "Descubrir más"
+    },
+    "values": {
+      "title": "Dedicamos toda nuestra capacidad técnica, experiencia y cumplimiento para que nuestros clientes logren sus objetivos con la más alta eficiencia y calidad"
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "members": [
+        {
+          "name": "Horacio Trujillo Loli",
+          "role": "CEO",
+          "description": "Fundador y su solvencia técnica y conocimiento y excelente gestión interpersonal generan grandes sinergias para lograr los más complejos retos de los proyectos. Horacio es la fuerza motriz detrás de la empresa. Le encanta mantenerse ocupado y conocer nuevas tecnologías para aportar innovación a sus soluciones.",
+          "image": "/img/colaboradores/DSC_0101.jpg"
+        },
+        {
+          "name": "Leyla Becerra",
+          "role": "Consultora Senior",
+          "description": "A Leyla le encanta la innovación y los desafíos. Con su experiencia de varios años como gerente de automatización de subestaciones y centrales de generación, ha adquirido una gran trayectoria que respalda al equipo de trabajo y asesora de forma muy profesional para que nuestros clientes siempre se lleven la mejor solución.",
+          "image": "/img/colaboradores/leyla.jpg"
+        },
+        {
+          "name": "Ruben Dario Arias",
+          "role": "Consultor Senior",
+          "description": "Ingeniero eléctrico con amplia experiencia en el sector de generación de energía eléctrica en plantas térmicas, hidráulicas y de biomasa. Orientado a incrementar la eficiencia de procesos, uso racional de la energía, monitoreo y diseño de procedimientos operacionales y de seguridad. Habilidad en la implementación de programas de capacitación técnica, trabajo en equipo y resultados.",
+          "image": "/img/colaboradores/Ruben.jpeg"
+        },
+        {
+          "name": "Andrés Felipe Jurado",
+          "role": "Ingeniero Campo",
+          "description": "Ingeniero eléctrico que se ha desempeñado en pruebas y puesta en servicio de sistemas de potencia. Andrés ha participado en numerosos proyectos en varios países de Suramérica. Le encanta leer y aprender idiomas.",
+          "image": "/img/colaboradores/Felipe.png"
+        }
+      ]
     }
   },
   "contacto-section": {
@@ -20,9 +73,7 @@
     "vision": "Visualizamos un futuro sostenible impulsado por energía limpia y eficiente.",
     "form": {
       "name": "Nombre",
-
       "phone": "Teléfono",
-
       "email": "Correo Electrónico",
       "company": "Empresa",
       "subject": "Asunto",
@@ -44,61 +95,6 @@
       }
     ]
   },
-  "hero": {
-    "title": "Somos su aliado estratégico en proyectos de energía"
-  },
-  "mission": {
-  "title": "Nuestra misión",
-  "description": "Ofrecer a nuestros clientes un portafolio de servicios de alta calidad, confiables, eficientes, amigables con el medio ambiente y con aportes altamente innovadores."
-},
-"values": {
-  "title": "Nuestros valores",
-  "description": "Creemos y estamos comprometidos con nuestros valores: integridad, calidad, responsabilidad e innovación."
-},
-"team": {
-  "title": "Nuestro equipo",
-  "description": "Contamos con un equipo profesional de varios países con excelente conocimiento técnico, altamente colaborativo y con capacidad y proactividad en la resolución de las dificultades propias de proyectos complejos."
-},
-"nosotros-section": {
-  "hero": {
-    "title": "Somos su aliado estratégico en proyectos de energía",
-    "subtitle": "Podemos apoyarlo en todas las etapas de un proyecto de energía.",
-    "button": "Descubrir más"
-  },
-  "values": {
-    "title": "Dedicamos toda nuestra capacidad técnica, experiencia y cumplimiento para que nuestros clientes logren sus objetivos con la más alta eficiencia y calidad"
-  },
-  "team": {
-    "title": "Nuestro Equipo",
-    "members": [
-      {
-        "name": "Horacio Trujillo Loli",
-        "role": "CEO",
-        "description": "Fundador y su solvencia técnica y conocimiento y excelente gestión interpersonal generan grandes sinergias para lograr los más complejos retos de los proyectos. Horacio es la fuerza motriz detrás de la empresa. Le encanta mantenerse ocupado y conocer nuevas tecnologías para aportar innovación a sus soluciones.",
-        "image": "/img/colaboradores/DSC_0101.jpg"
-      },
-      {
-        "name": "Leyla Becerra",
-        "role": "Consultora Senior",
-        "description": "A Leyla le encanta la innovación y los desafíos. Con su experiencia de varios años como gerente de automatización de subestaciones y centrales de generación, ha adquirido una gran trayectoria que respalda al equipo de trabajo y asesora de forma muy profesional para que nuestros clientes siempre se lleven la mejor solución.",
-        "image": "/img/colaboradores/leyla.jpg"
-      },
-      {
-        "name": "Ruben Dario Arias",
-        "role": "Consultor Senior",
-        "description": "Ingeniero eléctrico con amplia experiencia en el sector de generación de energía eléctrica en plantas térmicas, hidráulicas y de biomasa. Orientado a incrementar la eficiencia de procesos, uso racional de la energía, monitoreo y diseño de procedimientos operacionales y de seguridad. Habilidad en la implementación de programas de capacitación técnica, trabajo en equipo y resultados.",
-        "image": "/img/colaboradores/Ruben.jpeg"
-      },
-      {
-        "name": "Andrés Felipe Jurado",
-        "role": "Ingeniero Campo",
-        "description": "Ingeniero eléctrico que se ha desempeñado en pruebas y puesta en servicio de sistemas de potencia. Andrés ha participado en numerosos proyectos en varios países de Suramérica. Le encanta leer y aprender idiomas.",
-        "image": "/img/colaboradores/Felipe.png"
-      }
-    ]
-  }
-}
-,
   "energyProyect": {
     "title": "Ejecución Integral de Proyectos de Energía",
     "summary": "Brindamos soporte experto en cada etapa del ciclo del proyecto.",
@@ -106,85 +102,53 @@
     "button": "Descubrir más"
   },
   "proyectos-section": {
-  "heroTitle": "Ejecución de Proyectos de Energía",
-  "heroDescription": "Nuestra experiencia nos permite dar soporte a sus necesidades en proyectos de energía en todas sus etapas: concepción del proyecto, etapa de oferta, planeación, ejecución y cierre.",
-  "heroButton": "Descubrir más",
-  "sections": [
-    {
-      "title": "Estudio Inicial",
-      "description": [
-        "Elaboración, revisión y/o validación de términos de referencia o pliegos técnicos.",
-        "Análisis del riesgo.",
-        "Soporte en la elaboración de planes de ejecución.",
-        "Soporte en la elaboración de presupuestos económicos."
-      ],
-      "image": "/img/integral.jpg"
-    },
-    {
-      "title": "Oferta",
-      "description": [
-        "Análisis de términos de referencia o pliegos técnicos.",
-        "Análisis y delimitación del alcance e identificación temprana de riesgos.",
-        "Soporte en la preparación de oferta técnica.",
-        "Revisión de ofertas técnicas de terceros.",
-        "Elaboración de estrategias, planes de trabajo y cronogramas de ejecución."
-      ],
-      "image": "/img/servicios/s1.jpg"
-    },
-    {
-      "title": "Ejecución",
-      "description": [
-        "Elaboración de estrategias, planes de trabajo y cronogramas.",
-        "Identificación de riesgos y planes de mitigación.",
-        "Revisión de cumplimiento del alcance técnico.",
-        "Seguimiento y trazabilidad del proyecto técnico."
-      ],
-      "image": "/img/hero.jpeg"
-    },
-    {
-      "title": "Cierre del proyecto",
-      "description": [
-        "Soporte en el levantamiento de pendientes.",
-        "Actas de cierre técnico.",
-        "Documentación de cierre: manuales y digitalización.",
-        "Capacitación y soporte en operación y mantenimiento."
-      ],
-      "image": "/img/servicios/s4.jpg"
-    }
-  ]
-},
-{++
-  "referencesTitle": "Nuestras referencias",
-  "referencesSubtitle": "Tenemos buena compañía. Ellos han confiado en nosotros:",
-  "logos": [
-    { "src": "/logos/riederlogo2.png", "alt": "Rieder", "width": 120, "height": 60 },
-    { "src": "/logos/logo-isa.png", "alt": "ISA", "width": 100, "height": 50 },
-    { "src": "/logos/siemens.png", "alt": "Siemens", "width": 140, "height": 60 },
-    { "src": "/logos/logo-text-kallpa.png", "alt": "Kallpa", "width": 130, "height": 50 },
-    { "src": "/logos/descarga.png", "alt": "Ande", "width": 100, "height": 50 }
-  ],
-  "helpTitle": "¿Cómo podemos ayudar?",
-  "helpDescription": "Contáctanos en cualquier momento",
-  "callUsTitle": "Llámanos",
-  "callUsNumbers": [
-    { "country": "Perú", "number": "+5117390828", "href": "tel:+5117390828" },
-    { "country": "Colombia", "number": "+573017911197", "href": "tel:+573017911197" }
-  ],
-  "emailTitle": "Envíenos un mensaje",
-  "email": "atencionalcliente@htl-cs.com",
-  "followUsTitle": "Síguenos",
-  "linkedinUrl": "https://linkedin.com",
-  "copyright": "Copyright © 2025 HTL",
-  "navLinks": [
-    { "href": "#inicio", "label": "Inicio" },
-    { "href": "#servicios", "label": "Servicios" },
-    { "href": "#proyectos", "label": "Proyectos" },
-    { "href": "#historias", "label": "Historias de éxito" },
-    { "href": "#nosotros", "label": "Sobre nosotros" }
-  ]
-}
-,
-  
+    "heroTitle": "Ejecución de Proyectos de Energía",
+    "heroDescription": "Nuestra experiencia nos permite dar soporte a sus necesidades en proyectos de energía en todas sus etapas: concepción del proyecto, etapa de oferta, planeación, ejecución y cierre.",
+    "heroButton": "Descubrir más",
+    "sections": [
+      {
+        "title": "Estudio Inicial",
+        "description": [
+          "Elaboración, revisión y/o validación de términos de referencia o pliegos técnicos.",
+          "Análisis del riesgo.",
+          "Soporte en la elaboración de planes de ejecución.",
+          "Soporte en la elaboración de presupuestos económicos."
+        ],
+        "image": "/img/integral.jpg"
+      },
+      {
+        "title": "Oferta",
+        "description": [
+          "Análisis de términos de referencia o pliegos técnicos.",
+          "Análisis y delimitación del alcance e identificación temprana de riesgos.",
+          "Soporte en la preparación de oferta técnica.",
+          "Revisión de ofertas técnicas de terceros.",
+          "Elaboración de estrategias, planes de trabajo y cronogramas de ejecución."
+        ],
+        "image": "/img/servicios/s1.jpg"
+      },
+      {
+        "title": "Ejecución",
+        "description": [
+          "Elaboración de estrategias, planes de trabajo y cronogramas.",
+          "Identificación de riesgos y planes de mitigación.",
+          "Revisión de cumplimiento del alcance técnico.",
+          "Seguimiento y trazabilidad del proyecto técnico."
+        ],
+        "image": "/img/hero.jpeg"
+      },
+      {
+        "title": "Cierre del proyecto",
+        "description": [
+          "Soporte en el levantamiento de pendientes.",
+          "Actas de cierre técnico.",
+          "Documentación de cierre: manuales y digitalización.",
+          "Capacitación y soporte en operación y mantenimiento."
+        ],
+        "image": "/img/servicios/s4.jpg"
+      }
+    ]
+  },
   "servicios-section-global": {
     "title": "Lo que ofrecemos",
     "description": "Servicios diseñados para acompañarte en cada etapa del camino.",
@@ -203,96 +167,112 @@
       }
     ]
   },
-
   "servicios-section": {
-  "title": "Nuestros Servicios",
-  "subtitle": "Ofrecemos soluciones integrales para cada etapa de tu proyecto eléctrico.",
-  "servicios": [
-    {
-      "title": "Consultorías",
-      "image": "/img/servicios/s1.jpg",
-      "items": [
-        "Cálculo de protecciones eléctricas",
-        "Cálculo de carga y cortocircuito",
-        "Estudios de coordinación y flujo",
-        "Conexión de centrales generadoras",
-        "Planeación de sistemas eléctricos",
-        "Estudios de arco eléctrico (ArcFlash)"
-      ]
-    },
-    {
-      "title": "Ingeniería secundaria",
-      "image": "/img/servicios/s2.jpg",
-      "items": [
-        "Diagramas unifilares y lógicos",
-        "Definición de tableros y señales",
-        "Arquitectura de red y IEDs",
-        "Diseño de interconexiones",
-        "Listados para sistema de control"
-      ]
-    },
-    {
-      "title": "Configuración de equipos",
-      "image": "/img/servicios/s3.jpg",
-      "items": [
-        "Relés de protección",
-        "Reguladores de tensión",
-        "Unidades de bahía, IVO boxes",
-        "Integración con Siemens, ABB, SEL"
-      ]
-    },
-    {
-      "title": "Pruebas en fábrica",
-      "image": "/img/servicios/s4.jpg",
-      "items": [
-        "Protocolos de prueba PRE-FAT y FAT",
-        "Pruebas funcionales de relés",
-        "Simulación de señales de IEDs",
-        "Sincronización de tiempo"
-      ]
-    },
-    {
-      "title": "Puesta en servicio y comisionamiento",
-      "image": "/img/servicios/s5.jpg",
-      "items": [
-        "Ensayos OCC y archivos",
-        "Verificación de cableados y baterías",
-        "Pruebas de TC’s y TT’s",
-        "Mediciones de campo"
-      ]
-    },
-    {
-      "title": "Alquiler de equipos",
-      "image": "/img/servicios/s6.jpg",
-      "items": [
-        "CPC100, CMC356, Tangente Delta",
-        "Inyección primaria y secundaria",
-        "Medidores de potencia y GPS"
-      ]
-    }
-  ]
+    "title": "Nuestros Servicios",
+    "subtitle": "Ofrecemos soluciones integrales para cada etapa de tu proyecto eléctrico.",
+    "servicios": [
+      {
+        "title": "Consultorías",
+        "image": "/img/servicios/s1.jpg",
+        "items": [
+          "Cálculo de protecciones eléctricas",
+          "Cálculo de carga y cortocircuito",
+          "Estudios de coordinación y flujo",
+          "Conexión de centrales generadoras",
+          "Planeación de sistemas eléctricos",
+          "Estudios de arco eléctrico (ArcFlash)"
+        ]
+      },
+      {
+        "title": "Ingeniería secundaria",
+        "image": "/img/servicios/s2.jpg",
+        "items": [
+          "Diagramas unifilares y lógicos",
+          "Definición de tableros y señales",
+          "Arquitectura de red y IEDs",
+          "Diseño de interconexiones",
+          "Listados para sistema de control"
+        ]
+      },
+      {
+        "title": "Configuración de equipos",
+        "image": "/img/servicios/s3.jpg",
+        "items": [
+          "Relés de protección",
+          "Reguladores de tensión",
+          "Unidades de bahía, IVO boxes",
+          "Integración con Siemens, ABB, SEL"
+        ]
+      },
+      {
+        "title": "Pruebas en fábrica",
+        "image": "/img/servicios/s4.jpg",
+        "items": [
+          "Protocolos de prueba PRE-FAT y FAT",
+          "Pruebas funcionales de relés",
+          "Simulación de señales de IEDs",
+          "Sincronización de tiempo"
+        ]
+      },
+      {
+        "title": "Puesta en servicio y comisionamiento",
+        "image": "/img/servicios/s5.jpg",
+        "items": [
+          "Ensayos OCC y archivos",
+          "Verificación de cableados y baterías",
+          "Pruebas de TC’s y TT’s",
+          "Mediciones de campo"
+        ]
+      },
+      {
+        "title": "Alquiler de equipos",
+        "image": "/img/servicios/s6.jpg",
+        "items": [
+          "CPC100, CMC356, Tangente Delta",
+          "Inyección primaria y secundaria",
+          "Medidores de potencia y GPS"
+        ]
+      }
+    ]
+  },
+  "contador-proyectos-section": {
+    "title": "Nuestra Experiencia en Cifras",
+    "description": "Estos números reflejan el alcance y la magnitud de nuestro trabajo en proyectos energéticos alrededor del mundo.",
+    "datos": [
+      { "valor": 5, "label": "Países" },
+      { "valor": 28, "label": "Proyectos" },
+      { "valor": 28, "label": "Subestaciones" },
+      { "valor": 7, "label": "Centrales de generación" }
+    ]
+  },
+  "footer": {
+    "referencesTitle": "Nuestras referencias",
+    "referencesSubtitle": "Tenemos buena compañía. Ellos han confiado en nosotros:",
+    "logos": [
+      { "src": "/logos/riederlogo2.png", "alt": "Rieder", "width": 120, "height": 60 },
+      { "src": "/logos/logo-isa.png", "alt": "ISA", "width": 100, "height": 50 },
+      { "src": "/logos/siemens.png", "alt": "Siemens", "width": 140, "height": 60 },
+      { "src": "/logos/logo-text-kallpa.png", "alt": "Kallpa", "width": 130, "height": 50 },
+      { "src": "/logos/descarga.png", "alt": "Ande", "width": 100, "height": 50 }
+    ],
+    "helpTitle": "¿Cómo podemos ayudar?",
+    "helpDescription": "Contáctanos en cualquier momento",
+    "callUsTitle": "Llámanos",
+    "callUsNumbers": [
+      { "country": "Perú", "number": "+5117390828", "href": "tel:+5117390828" },
+      { "country": "Colombia", "number": "+573017911197", "href": "tel:+573017911197" }
+    ],
+    "emailTitle": "Envíenos un mensaje",
+    "email": "atencionalcliente@htl-cs.com",
+    "followUsTitle": "Síguenos",
+    "linkedinUrl": "https://linkedin.com",
+    "copyright": "Copyright © 2025 HTL",
+    "navLinks": [
+      { "href": "#inicio", "label": "Inicio" },
+      { "href": "#servicios", "label": "Servicios" },
+      { "href": "#proyectos", "label": "Proyectos" },
+      { "href": "#historias", "label": "Historias de éxito" },
+      { "href": "#nosotros", "label": "Sobre nosotros" }
+    ]
+  }
 }
-,
-"contador-proyectos-section": {
-  "title": "Nuestra Experiencia en Cifras",
-  "description": "Estos números reflejan el alcance y la magnitud de nuestro trabajo en proyectos energéticos alrededor del mundo.",
-  "datos": [
-    { "valor": 5, "label": "Países" },
-    { "valor": 28, "label": "Proyectos" },
-    { "valor": 28, "label": "Subestaciones" },
-    { "valor": 7, "label": "Centrales de generación" }
-  ]
-}
-,
-
-  "referencesTitle": "Nuestras referencias",
-  "referencesSubtitle": "Tenemos buena compañía. Ellos han confiado en nosotros:",
-  "logos": [
-    { "src": "/logos/riederlogo2.png", "alt": "Rieder", "width": 120, "height": 60 },
-    { "src": "/logos/logo-isa.png", "alt": "ISA", "width": 100, "height": 50 },
-    { "src": "/logos/siemens.png", "alt": "Siemens", "width": 140, "height": 60 },
-    { "src": "/logos/logo-text-kallpa.png", "alt": "Kallpa", "width": 130, "height": 50 },
-    { "src": "/logos/descarga.png", "alt": "Ande", "width": 100, "height": 50 }
-  ]
-}
-

@@ -11,10 +11,64 @@
       "contact": "Contact Us"
     }
   },
+  "hero": {
+    "title": "We are your strategic partner in energy projects"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To offer our clients a portfolio of high-quality, reliable, efficient, environmentally friendly, and highly innovative services."
+  },
+  "values": {
+    "title": "Our Values",
+    "description": "We believe in and are committed to our values: integrity, quality, responsibility, and innovation."
+  },
+  "team": {
+    "title": "Our Team",
+    "description": "We have a professional team from various countries with excellent technical knowledge, highly collaborative, and with the capacity and proactivity to solve the challenges of complex projects."
+  },
+  "nosotros-section": {
+    "hero": {
+      "title": "We are your strategic partner in energy projects",
+      "subtitle": "We can support you in all stages of an energy project.",
+      "button": "Learn More"
+    },
+    "values": {
+      "title": "We dedicate all our technical capacity, experience, and commitment so that our clients achieve their objectives with the highest efficiency and quality"
+    },
+    "team": {
+      "title": "Our Team",
+      "members": [
+        {
+          "name": "Horacio Trujillo Loli",
+          "role": "CEO",
+          "description": "Founder whose technical expertise, knowledge, and excellent interpersonal management generate great synergies to achieve the most complex project challenges. Horacio is the driving force behind the company. He loves staying busy and learning about new technologies to bring innovation to his solutions.",
+          "image": "/img/colaboradores/DSC_0101.jpg"
+        },
+        {
+          "name": "Leyla Becerra",
+          "role": "Senior Consultant",
+          "description": "Leyla loves innovation and challenges. With several years of experience as an automation manager for substations and generation plants, she has built a great career that supports the team and provides highly professional advice so our clients always receive the best solution.",
+          "image": "/img/colaboradores/leyla.jpg"
+        },
+        {
+          "name": "Ruben Dario Arias",
+          "role": "Senior Consultant",
+          "description": "Electrical engineer with extensive experience in the generation sector in thermal, hydro, and biomass plants. Focused on improving process efficiency, rational energy use, monitoring, and designing operational and safety procedures. Skilled in implementing technical training programs, teamwork, and delivering results.",
+          "image": "/img/colaboradores/Ruben.jpeg"
+        },
+        {
+          "name": "Andrés Felipe Jurado",
+          "role": "Field Engineer",
+          "description": "Electrical engineer who has worked on testing and commissioning power systems. Andrés has participated in numerous projects across several South American countries. He enjoys reading and learning languages.",
+          "image": "/img/colaboradores/Felipe.png"
+        }
+      ]
+    }
+  },
   "contacto-section": {
     "title": "Contact Us",
     "subtitle": "Get in touch with us",
-    "description": "We are here to assist you with your energy projects. Reach out to us for inquiries, support, or collaboration opportunities.",
+    "description": "We are here to help you with your energy projects. Contact us for inquiries, support, or collaboration opportunities.",
     "mission": "Our mission is to provide high-quality, reliable, and innovative energy solutions.",
     "vision": "We envision a sustainable future powered by clean and efficient energy.",
     "form": {
@@ -24,93 +78,84 @@
       "company": "Company",
       "subject": "Subject",
       "message": "Message",
-      "submit": "Submit"
+      "submit": "Send"
     },
-"locations": [
-  {
-    "name": "HTL Consultoría y Servicios",
-    "address": "Km 2.5 Vía Cajicá, Ed Belenus Of. 513, Chía, Cundinamarca, Colombia",
-    "phone": "+573017911197",
-    "email": "atencionalcliente@htl-cs.com"
-  },
-  {
-    "name": "PRESEL SAC",
-    "address": "Jr Pallasca 1951, Los Olivos, Lima",
-    "phone": "+5117390828",
-    "email": "atencionalcliente@htl-cs.com"
-  }
-]
-
-  },
-  "hero": {
-    "title": "We are your strategic partner in energy projects"
-  },
-  "mission": {
-  "title": "Our Mission",
-  "description": "To offer our clients a portfolio of high-quality, reliable, efficient, environmentally friendly, and highly innovative services."
-},
-"values": {
-  "title": "Our Values",
-  "description": "We believe in and are committed to our values: integrity, quality, responsibility, and innovation."
-},
-"team": {
-  "title": "Our Team",
-  "description": "We have a professional team from several countries with excellent technical knowledge, highly collaborative, proactive, and capable of solving the challenges of complex projects."
-},
-"nosotros-section": {
-  "hero": {
-    "title": "We are your strategic partner in energy projects",
-    "subtitle": "We can support you in all stages of an energy project.",
-    "button": "Discover more"
-  },
-  "values": {
-    "title": "We dedicate all our technical capacity, experience, and reliability so that our clients achieve their objectives with the highest efficiency and quality"
-  },
-  "team": {
-    "title": "Our Team",
-    "members": [
+    "locations": [
       {
-        "name": "Horacio Trujillo Loli",
-        "role": "CEO",
-        "description": "Founder with strong technical expertise and excellent interpersonal skills, generating powerful synergies to achieve the most complex project challenges. Horacio is the driving force behind the company and enjoys staying busy and discovering new technologies to innovate his solutions.",
-        "image": "/img/colaboradores/DSC_0101.jpg"
+        "name": "HTL Consulting and Services",
+        "address": "Km 2.5 Vía Cajicá, Ed Belenus Of. 513, Chía, Cundinamarca, Colombia",
+        "phone": "+573017911197",
+        "email": "atencionalcliente@htl-cs.com"
       },
       {
-        "name": "Leyla Becerra",
-        "role": "Senior Consultant",
-        "description": "Leyla loves innovation and challenges. With years of experience as an automation manager for substations and power plants, she brings great expertise to the team and advises clients professionally to ensure optimal solutions.",
-        "image": "/img/colaboradores/leyla.jpg"
-      },
-      {
-        "name": "Ruben Dario Arias",
-        "role": "Senior Consultant",
-        "description": "Electrical engineer with extensive experience in thermal, hydro, and biomass power generation. Focused on process efficiency, energy optimization, and operational safety. Skilled in technical training and teamwork to deliver results.",
-        "image": "/img/colaboradores/Ruben.jpeg"
-      },
-      {
-        "name": "Andrés Felipe Jurado",
-        "role": "Field Engineer",
-        "description": "Electrical engineer specialized in testing and commissioning of power systems. Andrés has participated in numerous projects across South America. He enjoys reading and learning languages.",
-        "image": "/img/colaboradores/Felipe.png"
+        "name": "PRESEL SAC",
+        "address": "Jr Pallasca 1951, Los Olivos, Lima",
+        "phone": "+5117390828",
+        "email": "atencionalcliente@htl-cs.com"
       }
     ]
-  }
-},
-
+  },
   "energyProyect": {
     "title": "Comprehensive Execution of Energy Projects",
     "summary": "We provide expert support at every stage of the project cycle.",
-    "description": "We have the experience to support you through all phases of your energy project: from initial concept through bidding, planning, and execution to successful closure. Our approach ensures efficiency, quality, and compliance every step of the way.",
-    "button": "Discover more"
+    "description": "We have the necessary experience to accompany you through all phases of your energy project: from the initial concept, through the offer stage, planning, and execution, to successful closure. Our approach ensures efficiency, quality, and compliance at every step.",
+    "button": "Learn More"
   },
-
+  "proyectos-section": {
+    "heroTitle": "Energy Project Execution",
+    "heroDescription": "Our experience allows us to support your energy project needs at all stages: project conception, offer stage, planning, execution, and closure.",
+    "heroButton": "Learn More",
+    "sections": [
+      {
+        "title": "Initial Study",
+        "description": [
+          "Preparation, review, and/or validation of terms of reference or technical specifications.",
+          "Risk analysis.",
+          "Support in preparing execution plans.",
+          "Support in preparing economic budgets."
+        ],
+        "image": "/img/integral.jpg"
+      },
+      {
+        "title": "Offer",
+        "description": [
+          "Analysis of terms of reference or technical specifications.",
+          "Scope analysis, delimitation, and early risk identification.",
+          "Support in preparing the technical offer.",
+          "Review of third-party technical offers.",
+          "Preparation of strategies, work plans, and execution schedules."
+        ],
+        "image": "/img/servicios/s1.jpg"
+      },
+      {
+        "title": "Execution",
+        "description": [
+          "Preparation of strategies, work plans, and schedules.",
+          "Risk identification and mitigation plans.",
+          "Review of technical scope compliance.",
+          "Project technical tracking and traceability."
+        ],
+        "image": "/img/hero.jpeg"
+      },
+      {
+        "title": "Project Closure",
+        "description": [
+          "Support in resolving pending items.",
+          "Technical closure reports.",
+          "Closure documentation: manuals and digitization.",
+          "Training and support in operation and maintenance."
+        ],
+        "image": "/img/servicios/s4.jpg"
+      }
+    ]
+  },
   "servicios-section-global": {
-    "title": "What we offer",
-    "description": "Services designed to support you at every stage of the journey.",
+    "title": "What We Offer",
+    "description": "Services designed to accompany you every step of the way.",
     "items": [
       {
         "title": "Our Services",
-        "desc": "Discover our service portfolio."
+        "desc": "Explore our service portfolio."
       },
       {
         "title": "Project Support",
@@ -118,146 +163,116 @@
       },
       {
         "title": "Success Stories",
-        "desc": "Learn about projects where our contribution made a difference."
+        "desc": "Discover stories of projects where our contribution made the difference."
       }
     ]
   },
-
   "servicios-section": {
-  "title": "Our Services",
-  "subtitle": "We offer comprehensive solutions for every stage of your electrical project.",
-  "servicios": [
-    {
-      "title": "Consulting",
-      "image": "/img/servicios/s1.jpg",
-      "items": [
-        "Electrical protection calculations",
-        "Load and short-circuit calculations",
-        "Coordination and power flow studies",
-        "Generator plant interconnection",
-        "Electrical system planning",
-        "Arc flash studies"
-      ]
-    },
-    {
-      "title": "Secondary Engineering",
-      "image": "/img/servicios/s2.jpg",
-      "items": [
-        "Single-line and logic diagrams",
-        "Panel and signal definitions",
-        "Network and IED architecture",
-        "Interconnection design",
-        "Control system listings"
-      ]
-    },
-    {
-      "title": "Equipment Configuration",
-      "image": "/img/servicios/s3.jpg",
-      "items": [
-        "Protection relays",
-        "Voltage regulators",
-        "Bay units, IVO boxes",
-        "Integration with Siemens, ABB, SEL"
-      ]
-    },
-    {
-      "title": "Factory Testing",
-      "image": "/img/servicios/s4.jpg",
-      "items": [
-        "PRE-FAT and FAT test protocols",
-        "Relay functional testing",
-        "IED signal simulation",
-        "Time synchronization"
-      ]
-    },
-    {
-      "title": "Commissioning",
-      "image": "/img/servicios/s5.jpg",
-      "items": [
-        "OCC tests and files",
-        "Cable and battery verification",
-        "CT and VT testing",
-        "Field measurements"
-      ]
-    },
-    {
-      "title": "Equipment Rental",
-      "image": "/img/servicios/s6.jpg",
-      "items": [
-        "CPC100, CMC356, Tangent Delta",
-        "Primary and secondary injection",
-        "Power meters and GPS"
-      ]
-    }
-  ]
-},
-"proyectos-section": {
-  "heroTitle": "Energy Project Execution",
-  "heroDescription": "Our experience allows us to support your needs in energy projects at all stages: project conception, bidding phase, planning, execution, and closure.",
-  "heroButton": "Discover more",
-  "sections": [
-    {
-      "title": "Initial Study",
-      "description": [
-        "Preparation, review, and/or validation of terms of reference or technical specifications.",
-        "Risk analysis.",
-        "Support in the preparation of execution plans.",
-        "Support in the preparation of economic budgets."
-      ],
-      "image": "/img/integral.jpg"
-    },
-    {
-      "title": "Bidding",
-      "description": [
-        "Analysis of terms of reference or technical specifications.",
-        "Scope analysis and early risk identification.",
-        "Support in preparing technical proposals.",
-        "Review of third-party technical proposals.",
-        "Development of strategies, work plans, and execution schedules."
-      ],
-      "image":  "/img/servicios/s1.jpg"
-    },
-    {
-      "title": "Execution",
-      "description": [
-        "Development of strategies, work plans, and schedules.",
-        "Risk identification and mitigation plans.",
-        "Review of technical scope compliance.",
-        "Project technical monitoring and traceability."
-      ],
-      "image": "/img/hero.jpeg"
-    },
-    {
-      "title": "Project Closure",
-      "description": [
-        "Support in resolving pending items.",
-        "Technical closure reports.",
-        "Closure documentation: manuals and digitization.",
-        "Training and support in operation and maintenance."
-      ],
-      "image": "/img/servicios/s4.jpg"
-    }
-  ]
-},
-"contador-proyectos-section": {
-  "title": "Our Experience in Numbers",
-  "description": "These figures reflect the scope and magnitude of our work in energy projects worldwide.",
-  "datos": [
-    { "valor": 5, "label": "Countries" },
-    { "valor": 28, "label": "Projects" },
-    { "valor": 28, "label": "Substations" },
-    { "valor": 7, "label": "Power plants" }
-  ]
-},
-
-  "referencesTitle": "Our references",
-  "referencesSubtitle": "We are in good company. They have trusted us:",
-  "logos": [
-    { "src": "/logos/riederlogo2.png", "alt": "Rieder", "width": 120, "height": 60 },
-    { "src": "/logos/logo-isa.png", "alt": "ISA", "width": 100, "height": 50 },
-    { "src": "/logos/siemens.png", "alt": "Siemens", "width": 140, "height": 60 },
-    { "src": "/logos/logo-text-kallpa.png", "alt": "Kallpa", "width": 130, "height": 50 },
-    { "src": "/logos/descarga.png", "alt": "Ande", "width": 100, "height": 50 }
-  ]
-
+    "title": "Our Services",
+    "subtitle": "We offer comprehensive solutions for every stage of your electrical project.",
+    "servicios": [
+      {
+        "title": "Consulting",
+        "image": "/img/servicios/s1.jpg",
+        "items": [
+          "Electrical protection calculations",
+          "Load and short-circuit calculations",
+          "Coordination and flow studies",
+          "Connection of generation plants",
+          "Electrical systems planning",
+          "Arc Flash studies"
+        ]
+      },
+      {
+        "title": "Secondary Engineering",
+        "image": "/img/servicios/s2.jpg",
+        "items": [
+          "Single-line and logic diagrams",
+          "Definition of panels and signals",
+          "Network architecture and IEDs",
+          "Interconnection design",
+          "Control system listings"
+        ]
+      },
+      {
+        "title": "Equipment Configuration",
+        "image": "/img/servicios/s3.jpg",
+        "items": [
+          "Protection relays",
+          "Voltage regulators",
+          "Bay units, IVO boxes",
+          "Integration with Siemens, ABB, SEL"
+        ]
+      },
+      {
+        "title": "Factory Testing",
+        "image": "/img/servicios/s4.jpg",
+        "items": [
+          "PRE-FAT and FAT test protocols",
+          "Functional relay tests",
+          "IED signal simulation",
+          "Time synchronization"
+        ]
+      },
+      {
+        "title": "Commissioning and Startup",
+        "image": "/img/servicios/s5.jpg",
+        "items": [
+          "OCC tests and files",
+          "Verification of wiring and batteries",
+          "CT and PT tests",
+          "Field measurements"
+        ]
+      },
+      {
+        "title": "Equipment Rental",
+        "image": "/img/servicios/s6.jpg",
+        "items": [
+          "CPC100, CMC356, Tangente Delta",
+          "Primary and secondary injection",
+          "Power meters and GPS"
+        ]
+      }
+    ]
+  },
+  "contador-proyectos-section": {
+    "title": "Our Experience in Numbers",
+    "description": "These figures reflect the scope and magnitude of our work in energy projects worldwide.",
+    "datos": [
+      { "valor": 5, "label": "Countries" },
+      { "valor": 28, "label": "Projects" },
+      { "valor": 28, "label": "Substations" },
+      { "valor": 7, "label": "Power plants" }
+    ]
+  },
+  "footer": {
+    "referencesTitle": "Our References",
+    "referencesSubtitle": "We are in good company. They have trusted us:",
+    "logos": [
+      { "src": "/logos/riederlogo2.png", "alt": "Rieder", "width": 120, "height": 60 },
+      { "src": "/logos/logo-isa.png", "alt": "ISA", "width": 100, "height": 50 },
+      { "src": "/logos/siemens.png", "alt": "Siemens", "width": 140, "height": 60 },
+      { "src": "/logos/logo-text-kallpa.png", "alt": "Kallpa", "width": 130, "height": 50 },
+      { "src": "/logos/descarga.png", "alt": "Ande", "width": 100, "height": 50 }
+    ],
+    "helpTitle": "How Can We Help?",
+    "helpDescription": "Contact us anytime",
+    "callUsTitle": "Call Us",
+    "callUsNumbers": [
+      { "country": "Peru", "number": "+5117390828", "href": "tel:+5117390828" },
+      { "country": "Colombia", "number": "+573017911197", "href": "tel:+573017911197" }
+    ],
+    "emailTitle": "Send Us a Message",
+    "email": "atencionalcliente@htl-cs.com",
+    "followUsTitle": "Follow Us",
+    "linkedinUrl": "https://linkedin.com",
+    "copyright": "Copyright © 2025 HTL",
+    "navLinks": [
+      { "href": "#inicio", "label": "Home" },
+      { "href": "#servicios", "label": "Services" },
+      { "href": "#proyectos", "label": "Projects" },
+      { "href": "#historias", "label": "Success Stories" },
+      { "href": "#nosotros", "label": "About Us" }
+    ]
+  }
 }
