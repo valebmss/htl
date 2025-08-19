@@ -24,8 +24,7 @@ export async function POST(req: Request) {
     await transporter.verify();
 
 
-   // const to = 'atencionalcliente@htl-cs.com';
-    const to = 'leidyvale244@gmail.com';
+    const to = 'atencionalcliente@htl-cs.com';
 
     await transporter.sendMail({
       from: `"Web Contacto HTL" <${process.env.SMTP_USER}>`,
