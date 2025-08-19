@@ -268,11 +268,11 @@
     "linkedinUrl": "https://linkedin.com",
     "copyright": "Copyright © 2025 HTL",
     "navLinks": [
-      { "href": "#inicio", "label": "Inicio" },
-      { "href": "#servicios", "label": "Servicios" },
-      { "href": "#proyectos", "label": "Proyectos" },
-      { "href": "#historias", "label": "Historias de éxito" },
-      { "href": "#nosotros", "label": "Sobre nosotros" }
+      { "href": "/", "label": "Inicio" },
+      { "href": "/es/servicios", "label": "Servicios" },
+      { "href": "/es/proyectos", "label": "Proyectos" },
+      { "href": "/es/blog", "label": "Historias de éxito" },
+      { "href": "/es/nosotros", "label": "Sobre nosotros" }
     ]
   }
 }
