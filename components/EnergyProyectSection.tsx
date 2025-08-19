@@ -36,6 +36,8 @@ export default function EnergyProyectSection({ dict }: EnergyProyectProps) {
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => window.location.href = '/contacto'}
             className="bg-[#91ACD6] hover:bg-[#7d9ac5] text-white font-medium px-6 py-2 rounded transition"
           >
             {dict.energyProyect.button}

@@ -95,6 +95,7 @@ export default function ProyectosPage({ dict }: ProyectosProps) {
                 variants={fadeUp(0.05)}
                 whileHover={{ scale: reduce ? 1 : 1.03 }}
                 whileTap={{ scale: reduce ? 1 : 0.98 }}
+                onClick={() => window.location.href = '/contacto'}
                 className="relative inline-flex items-center gap-2 rounded-xl px-5 py-2.5 font-medium
                            bg-gradient-to-r from-blue-400 to-sky-400 text-white shadow-md
                            hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
