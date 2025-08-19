@@ -24,7 +24,8 @@ export async function POST(req: Request) {
     await transporter.verify();
 
 
-    const to = 'atencionalcliente@htl-cs.com';
+   // const to = 'atencionalcliente@htl-cs.com';
+    const to = 'leidyvale244@gmail.com';
 
     await transporter.sendMail({
       from: `"Web Contacto HTL" <${process.env.SMTP_USER}>`,
@@ -40,14 +41,42 @@ Empresa: ${company}
 Mensaje:
 ${message}
       `.trim(),
-      html: `
-        <h2 style="font-family:sans-serif;margin:0 0 12px">Nuevo mensaje de contacto</h2>
-        <p><strong>Nombre:</strong> ${name || '-'}</p>
-        <p><strong>Teléfono:</strong> ${phone || '-'}</p>
-        <p><strong>Email:</strong> ${email || '-'}</p>
-        <p><strong>Empresa:</strong> ${company || '-'}</p>
-        <p style="white-space:pre-wrap;margin-top:12px">${(message || '').replace(/\n/g, '<br/>')}</p>
-      `,
+html: `
+  <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e6ef; border-radius: 8px; background-color: #f9fbfd;">
+    <h2 style="color: #2c3e50; border-bottom: 3px solid #91ACD6; padding-bottom: 8px; margin-bottom: 20px;">
+      📩 Nuevo mensaje de contacto
+    </h2>
+
+    <table style="width:100%; border-collapse: collapse; font-size: 14px;">
+      <tr>
+        <td style="padding: 10px; font-weight: bold; color: #34495e; width: 120px; background-color:#ecf2fa;">Nombre:</td>
+        <td style="padding: 10px; color: #2c3e50;">${name || '-'}</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; font-weight: bold; color: #34495e; background-color:#f5f8fc;">Teléfono:</td>
+        <td style="padding: 10px; color: #2c3e50;">${phone || '-'}</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; font-weight: bold; color: #34495e; background-color:#ecf2fa;">Email:</td>
+        <td style="padding: 10px; color: #2c3e50;">${email || '-'}</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; font-weight: bold; color: #34495e; background-color:#f5f8fc;">Empresa:</td>
+        <td style="padding: 10px; color: #2c3e50;">${company || '-'}</td>
+      </tr>
+    </table>
+
+    <div style="margin-top: 20px; padding: 15px; background: #fff; border-left: 5px solid #91ACD6; color: #2c3e50; line-height: 1.6; border-radius: 4px;">
+      <strong style="color:#2c3e50;">Mensaje:</strong><br/>
+      ${(message || '').replace(/\n/g, '<br/>')}
+    </div>
+
+    <p style="margin-top: 25px; font-size: 12px; color: #7f8c8d; text-align: center;">
+      ✨ Este correo fue generado automáticamente desde el formulario de contacto.
+    </p>
+  </div>
+`
+
     });
 
     return NextResponse.json({ ok: true });
