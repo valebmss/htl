@@ -30,7 +30,7 @@ export async function POST(req: Request) {
       from: `"Web Contacto HTL" <${process.env.SMTP_USER}>`,
       to,
       replyTo: email,
-      subject: `📩 ${subject || 'Nuevo mensaje de contacto'}`,
+      subject: `📩 Correo de pagina:  ${subject || 'Nuevo mensaje de contacto'}`,
       text: `
 Nombre: ${name}
 Teléfono: ${phone}
