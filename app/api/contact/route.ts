@@ -20,6 +20,10 @@ export async function POST(req: Request) {
       },
     });
 
+    // Verifica la conexión
+    await transporter.verify();
+
+
     const to = 'atencionalcliente@htl-cs.com';
 
     await transporter.sendMail({
