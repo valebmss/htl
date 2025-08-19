@@ -54,6 +54,7 @@ export default function Header({ dict }: HeaderProps) {
               className="object-contain"
             />
           </Link>
+          <h2 className=' font-bold text-3xl text-[#3a4b66] '>HTL</h2>
 
           {/* Hamburguesa visible solo en móvil */}
           <button
