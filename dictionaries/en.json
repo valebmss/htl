@@ -269,10 +269,10 @@
     "copyright": "Copyright © 2025 HTL",
     "navLinks": [
       { "href": "/", "label": "Home" },
-      { "href": "/es/servicios", "label": "Services" },
-      { "href": "/es/proyectos", "label": "Projects" },
-      { "href": "/es/blog", "label": "Success Stories" },
-      { "href": "/es/nosotros", "label": "About Us" }
+      { "href": "/en/servicios", "label": "Services" },
+      { "href": "/en/proyectos", "label": "Projects" },
+      { "href": "/en/blog", "label": "Success Stories" },
+      { "href": "/en/nosotros", "label": "About Us" }
     ]
   }
 }
