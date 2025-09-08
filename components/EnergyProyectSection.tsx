@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 type EnergyProyectProps = {
   dict: {
     energyProyect: {
@@ -14,6 +15,11 @@ type EnergyProyectProps = {
 };
 
 export default function EnergyProyectSection({ dict }: EnergyProyectProps) {
+    const pathname = usePathname();
+  
+
+    const currentLang = pathname.split('/')[1] === 'en' ? 'en' : 'es';
+
   return (
     <section className="bg-[#f1f4fa] py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
@@ -37,7 +43,7 @@ export default function EnergyProyectSection({ dict }: EnergyProyectProps) {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => window.location.href = '/contacto'}
+            onClick={() => window.location.href = `/${currentLang}/contacto`}
             className="bg-[#91ACD6] hover:bg-[#7d9ac5] text-white font-medium px-6 py-2 rounded transition"
           >
             {dict.energyProyect.button}
